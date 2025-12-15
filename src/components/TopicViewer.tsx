@@ -173,7 +173,7 @@ export default function TopicViewer({ topic, onClose }: TopicViewerProps) {
                                             ol: ({ node, ...props }) => <ol className="space-y-3 mb-6 ml-2" {...props} />,
                                             li: ({ node, ...props }) => (
                                                 <li className="flex items-start text-gray-300 leading-7 text-lg">
-                                                    <span className="mr-3 text-pink-500 mt-2.5 text-[8px] shrink-0">●</span>
+                                                    <span className="mr-3 text-pink-500 mt-2 text-[8px] shrink-0">●</span>
                                                     <div className="flex-1 [&>p]:m-0 [&>p]:leading-7">
                                                         {props.children}
                                                     </div>
