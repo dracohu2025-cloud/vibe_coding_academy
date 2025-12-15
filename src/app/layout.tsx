@@ -8,10 +8,7 @@ export const metadata: Metadata = {
 
 import { LanguageProvider } from '@/contexts/LanguageContext';
 import MeshGradientBackground from '@/components/MeshGradientBackground';
-import Navbar from '@/components/Navbar';
-import { VibeCoach } from '@/components/VibeCoach';
-
-import Script from 'next/script';
+import BMCWidget from '@/components/BMCWidget';
 
 export default function RootLayout({
     children,
@@ -21,10 +18,6 @@ export default function RootLayout({
     return (
         <html lang="en">
             <body>
-                <Script
-                    src="https://www.googletagmanager.com/gtag/js?id=G-KD86VPRLVN"
-                    strategy="afterInteractive"
-                />
                 <Script id="google-analytics" strategy="afterInteractive">
                     {`
                       window.dataLayer = window.dataLayer || [];
@@ -35,18 +28,12 @@ export default function RootLayout({
                     `}
                 </Script>
                 <Script
-                    id="bmc-widget"
-                    src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js"
-                    data-name="BMC-Widget"
-                    data-cfasync="false"
-                    data-id="dracohu2027"
-                    data-description="Support me on Buy me a coffee!"
-                    data-message=""
-                    data-color="#5F7FFF"
-                    data-position="Right"
-                    data-x_margin="100"
-                    data-y_margin="18"
+                    src="https://www.googletagmanager.com/gtag/js?id=G-KD86VPRLVN"
+                    strategy="afterInteractive"
                 />
+
+                <BMCWidget />
+
                 <LanguageProvider>
                     <MeshGradientBackground />
                     <Navbar />
