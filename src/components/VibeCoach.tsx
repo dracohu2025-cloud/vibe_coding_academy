@@ -81,7 +81,7 @@ export function VibeCoach() {
             {/* Trigger Button */}
             <motion.button
                 onClick={() => setIsOpen(!isOpen)}
-                className="fixed bottom-6 right-6 z-50 p-4 rounded-full bg-gradient-to-r from-pink-500 to-purple-600 text-white shadow-lg shadow-purple-500/30 hover:shadow-purple-500/50 hover:scale-110 transition-all active:scale-95 group"
+                className="fixed bottom-6 left-6 z-50 p-4 rounded-full bg-gradient-to-r from-pink-500 to-purple-600 text-white shadow-lg shadow-purple-500/30 hover:shadow-purple-500/50 hover:scale-110 transition-all active:scale-95 group"
                 whileHover={{ rotate: 5 }}
             >
                 {isOpen ? <X size={24} /> : <Bot size={24} className="group-hover:animate-pulse" />}
@@ -94,7 +94,7 @@ export function VibeCoach() {
                         initial={{ opacity: 0, scale: 0.9, y: 20 }}
                         animate={{ opacity: 1, scale: 1, y: 0 }}
                         exit={{ opacity: 0, scale: 0.9, y: 20 }}
-                        className="fixed bottom-24 right-6 z-50 w-[90vw] md:w-[600px] h-[600px] md:h-[80vh] bg-[#0a0a0c]/90 backdrop-blur-xl border border-white/10 rounded-3xl shadow-2xl flex flex-col overflow-hidden"
+                        className="fixed bottom-24 left-6 z-50 w-[90vw] md:w-[600px] h-[600px] md:h-[80vh] bg-[#0a0a0c]/90 backdrop-blur-xl border border-white/10 rounded-3xl shadow-2xl flex flex-col overflow-hidden"
                     >
                         {/* Header */}
                         <div className="p-4 border-b border-white/5 bg-white/5 flex items-center justify-between">

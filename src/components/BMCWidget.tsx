@@ -7,7 +7,7 @@ export default function BMCWidget() {
         <motion.div
             className="fixed bottom-6 z-50 pointer-events-auto"
             style={{
-                right: '100px', // Positioned left of VibeCoach
+                left: '100px', // Positioned right of VibeCoach (which is at left-6/24px)
             }}
             initial={{ scale: 0, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}
