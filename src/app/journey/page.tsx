@@ -7,6 +7,8 @@ import TopicViewer from '@/components/TopicViewer';
 import { Topic } from '@/data/knowledge_data';
 import { useLanguage } from '@/contexts/LanguageContext';
 
+import BaseFooter from '@/components/BaseFooter';
+
 export default function JourneyPage() {
     const { language } = useLanguage();
     const [selectedTopic, setSelectedTopic] = useState<Topic | null>(null);
@@ -35,6 +37,8 @@ export default function JourneyPage() {
                     isBlurred={!!selectedTopic}
                 />
             </motion.div>
+
+            <BaseFooter className="mt-12" />
 
             <TopicViewer
                 topic={selectedTopic}
