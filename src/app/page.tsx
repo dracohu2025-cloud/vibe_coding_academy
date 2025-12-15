@@ -4,8 +4,8 @@ import { useState } from 'react';
 import { motion } from 'framer-motion';
 import HeroSection from '@/components/HeroSection';
 import GlassBentoGrid from '@/components/GlassBentoGrid';
-import BaseFooter from '@/components/BaseFooter';
 import TopicViewer from '@/components/TopicViewer';
+import Script from 'next/script';
 import { Topic } from '@/data/knowledge_data';
 
 import { useLanguage } from '@/contexts/LanguageContext';
@@ -24,7 +24,23 @@ export default function Home() {
                 <HeroSection />
             </main>
 
-            <BaseFooter className="absolute bottom-0 w-full pointer-events-none" />
+            <Script
+                id="bmc-widget"
+                src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js"
+                data-name="BMC-Widget"
+                data-cfasync="false"
+                data-id="dracohu2027"
+                data-description="Support me on Buy me a coffee!"
+                data-message=""
+                data-color="#5F7FFF"
+                data-position="Right"
+                data-x_margin="100"
+                data-y_margin="18"
+            />
+
+            <footer className="py-8 text-center text-gray-600 text-sm font-mono absolute bottom-0 w-full pointer-events-none z-10">
+                <p>BUILT WITH NEXT.JS & VIBE. © 2025</p>
+            </footer>
         </div>
     );
 }
