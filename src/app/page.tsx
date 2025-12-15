@@ -3,50 +3,27 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import HeroSection from '@/components/HeroSection';
-import KnowledgeMap from '@/components/KnowledgeMap';
+import GlassBentoGrid from '@/components/GlassBentoGrid';
 import TopicViewer from '@/components/TopicViewer';
 import { Topic } from '@/data/knowledge_data';
 
-export default function Home() {
-    const [selectedTopic, setSelectedTopic] = useState<Topic | null>(null);
-    const [showMap, setShowMap] = useState(false);
+import { useLanguage } from '@/contexts/LanguageContext';
+import Navbar from '@/components/Navbar';
 
+export default function Home() {
     return (
-        <div className="min-h-screen p-4 md:p-8 md:max-w-7xl mx-auto flex flex-col">
-            <nav className="flex justify-between items-center py-6">
-                <div className="font-bold text-xl tracking-tighter">VIBE_ROOKIE</div>
-                <div className="flex gap-4 text-sm font-mono text-gray-400">
-                    <span>v1.0.0</span>
-                    <span>// EST. 2025</span>
-                </div>
-            </nav>
+        <div className="min-h-screen flex flex-col">
+            {/* Navbar is global now, but we included it here or in layout? 
+                Let's put Navbar in Layout to persist, or here if we want specific control.
+                The user asked for "Clicking Vibe Rookie returns home", so Navbar should be omnipresent.
+                I will add Navbar to Layout next. For now, let's clean this page.
+             */}
 
             <main className="flex-grow flex flex-col justify-center">
-                {!showMap ? (
-                    <HeroSection onStart={() => setShowMap(true)} />
-                ) : (
-                    <motion.div
-                        initial={{ opacity: 0 }}
-                        animate={{ opacity: 1 }}
-                        transition={{ duration: 1 }}
-                    >
-                        <div className="mb-8 text-center">
-                            <h2 className="text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-white to-gray-500">
-                                Knowledge Constellation
-                            </h2>
-                            <p className="text-gray-400">Select a node to access the data.</p>
-                        </div>
-                        <KnowledgeMap onTopicSelect={setSelectedTopic} />
-                    </motion.div>
-                )}
+                <HeroSection />
             </main>
 
-            <TopicViewer
-                topic={selectedTopic}
-                onClose={() => setSelectedTopic(null)}
-            />
-
-            <footer className="py-8 text-center text-gray-600 text-sm font-mono">
+            <footer className="py-8 text-center text-gray-600 text-sm font-mono absolute bottom-0 w-full pointer-events-none">
                 <p>BUILT WITH NEXT.JS & VIBE. © 2025</p>
             </footer>
         </div>

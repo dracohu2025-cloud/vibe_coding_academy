@@ -5,36 +5,57 @@
 :root {
   --background: 10, 10, 12;
   --foreground: 255, 255, 255;
-  
+
   --primary: 120, 119, 198;
   --primary-glow: 120, 119, 198;
-  
+
   --secondary: 255, 0, 128;
   --secondary-glow: 255, 0, 128;
-  
+
   --accent: 0, 255, 255;
-  
+
   --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 
 body {
   color: rgb(var(--foreground));
-  background: rgb(var(--background));
-  font-family: var(--font-sans);
+  /* Deep Space Gradient Base */
+  background: radial-gradient(circle at top center, #1a1033 0%, #050505 100%);
   overflow-x: hidden;
-  min-height: 100vh;
-  margin: 0;
-  padding: 0;
+  font-feature-settings: "ss01", "ss02", "cv01", "cv02";
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Nebula Flow v3 Utilities */
+@layer utilities {
+  .glass-panel {
+    @apply bg-black/40 backdrop-blur-[50px] border border-white/10 shadow-2xl;
+  }
+
+  .glass-card {
+    @apply relative overflow-hidden rounded-3xl border border-white/10 bg-[#0f0f11]/60 backdrop-blur-xl transition-colors duration-300;
+    box-shadow:
+      0 0 0 1px rgba(255, 255, 255, 0.05) inset,
+      0 8px 40px -10px rgba(0, 0, 0, 0.5);
+  }
+
+  .glass-card:hover {
+    @apply border-white/20 bg-[#1a1a1f]/80;
+    box-shadow:
+      0 0 0 1px rgba(255, 255, 255, 0.1) inset,
+      0 20px 60px -20px rgba(0, 0, 0, 0.6),
+      0 0 40px -10px rgba(var(--primary), 0.2);
+  }
 }
 
 /* Star field animation background */
 .bg-stars {
-  background-image: 
-    radial-gradient(1px 1px at 20px 30px, #ffffff, rgba(0,0,0,0)),
-    radial-gradient(1px 1px at 40px 70px, #ffffff, rgba(0,0,0,0)),
-    radial-gradient(1px 1px at 50px 160px, #ffffff, rgba(0,0,0,0)),
-    radial-gradient(1px 1px at 90px 40px, #ffffff, rgba(0,0,0,0)),
-    radial-gradient(1px 1px at 130px 80px, #ffffff, rgba(0,0,0,0));
+  background-image:
+    radial-gradient(1px 1px at 20px 30px, #ffffff, rgba(0, 0, 0, 0)),
+    radial-gradient(1px 1px at 40px 70px, #ffffff, rgba(0, 0, 0, 0)),
+    radial-gradient(1px 1px at 50px 160px, #ffffff, rgba(0, 0, 0, 0)),
+    radial-gradient(1px 1px at 90px 40px, #ffffff, rgba(0, 0, 0, 0)),
+    radial-gradient(1px 1px at 130px 80px, #ffffff, rgba(0, 0, 0, 0));
   background-repeat: repeat;
   background-size: 200px 200px;
   animation: stars 100s linear infinite;
@@ -48,73 +69,13 @@ body {
 }
 
 @keyframes stars {
-  from { transform: translateY(0); }
-  to { transform: translateY(-200px); }
-}
+  from {
+    transform: translateY(0);
+  }
 
-/* Glassmorphism utility */
-.glass {
-  background: rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.glass-strong {
-  background: rgba(10, 10, 12, 0.8);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  border: 1px solid rgba(255, 255, 255, 0.15);
-}
-
-/* Typography styles */
-h1, h2, h3 {
-  font-weight: 700;
-  letter-spacing: -0.02em;
-}
-
-h1 {
-  font-size: 3.5rem;
-  line-height: 1.1;
-  background: linear-gradient(to right, rgb(var(--foreground)), rgb(var(--primary)));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-h2 {
-  font-size: 2rem;
-  margin-top: 2rem;
-  margin-bottom: 1rem;
-  color: rgb(var(--foreground));
-}
-
-p {
-  line-height: 1.6;
-  color: rgba(255, 255, 255, 0.8);
-  margin-bottom: 1.5rem;
-}
-
-code {
-  font-family: 'JetBrains Mono', 'Fira Code', monospace;
-  background: rgba(255, 255, 255, 0.1);
-  padding: 0.2em 0.4em;
-  border-radius: 4px;
-  font-size: 0.9em;
-}
-
-pre {
-  background: rgba(0, 0, 0, 0.5);
-  padding: 1.5rem;
-  border-radius: 8px;
-  overflow-x: auto;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  margin: 1.5rem 0;
-}
-
-pre code {
-  background: transparent;
-  padding: 0;
+  to {
+    transform: translateY(-200px);
+  }
 }
 
 /* Custom Scrollbar */

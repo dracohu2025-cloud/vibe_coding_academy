@@ -2,9 +2,14 @@ import type { Metadata } from 'next';
 import './globals.css';
 
 export const metadata: Metadata = {
-    title: 'Vibe Coding Rookie',
-    description: 'A visual guide for the modern vibe coder.',
+    title: 'Vibe Coding',
+    description: 'Code with Soul.',
 };
+
+import { LanguageProvider } from '@/contexts/LanguageContext';
+import MeshGradientBackground from '@/components/MeshGradientBackground';
+import Navbar from '@/components/Navbar';
+import { VibeCoach } from '@/components/VibeCoach';
 
 export default function RootLayout({
     children,
@@ -12,12 +17,16 @@ export default function RootLayout({
     children: React.ReactNode;
 }) {
     return (
-        <html lang="zh-CN">
+        <html lang="en">
             <body>
-                <div className="bg-stars" />
-                <main className="min-h-screen relative z-10">
-                    {children}
-                </main>
+                <LanguageProvider>
+                    <MeshGradientBackground />
+                    <Navbar />
+                    <main className="min-h-screen relative z-10 font-sans text-white/90 selection:bg-pink-500/30">
+                        {children}
+                    </main>
+                    <VibeCoach />
+                </LanguageProvider>
             </body>
         </html>
     );
