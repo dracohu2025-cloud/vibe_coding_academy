@@ -7,7 +7,7 @@ export default function BMCWidget() {
         <motion.div
             className="fixed bottom-6 z-50 pointer-events-auto"
             style={{
-                left: '100px', // Positioned right of VibeCoach (which is at left-6/24px)
+                left: '70px', // Adjusted for smaller VibeCoach (left-6/24px width~34px)
             }}
             initial={{ scale: 0, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}
@@ -23,7 +23,7 @@ export default function BMCWidget() {
                 <img
                     src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=☕&slug=dracohu2027&button_colour=5F7FFF&font_colour=ffffff&font_family=Cookie&outline_colour=000000&coffee_colour=FFDD00"
                     alt="Buy me a coffee"
-                    className="h-[60px] w-auto shadow-lg hover:shadow-xl transition-shadow rounded-lg"
+                    className="h-[32px] w-auto shadow-lg hover:shadow-xl transition-shadow rounded-lg"
                 />
             </a>
         </motion.div>

@@ -81,10 +81,10 @@ export function VibeCoach() {
             {/* Trigger Button */}
             <motion.button
                 onClick={() => setIsOpen(!isOpen)}
-                className="fixed bottom-6 left-6 z-50 p-4 rounded-full bg-gradient-to-r from-pink-500 to-purple-600 text-white shadow-lg shadow-purple-500/30 hover:shadow-purple-500/50 hover:scale-110 transition-all active:scale-95 group"
+                className="fixed bottom-6 left-6 z-50 p-2 rounded-full bg-gradient-to-r from-pink-500 to-purple-600 text-white shadow-lg shadow-purple-500/30 hover:shadow-purple-500/50 hover:scale-110 transition-all active:scale-95 group"
                 whileHover={{ rotate: 5 }}
             >
-                {isOpen ? <X size={24} /> : <Bot size={24} className="group-hover:animate-pulse" />}
+                {isOpen ? <X size={18} /> : <Bot size={18} className="group-hover:animate-pulse" />}
             </motion.button>
 
             {/* Chat Window */}
