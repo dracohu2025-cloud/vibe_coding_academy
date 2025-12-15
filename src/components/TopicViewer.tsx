@@ -100,6 +100,67 @@ export default function TopicViewer({ topic, onClose }: TopicViewerProps) {
         });
     }, [content]);
 
+    // Memoize markdown components to prevent re-creation on every render
+    const markdownComponents = useMemo(() => ({
+        h1: ({ node, ...props }: any) => <h1 className="text-4xl md:text-5xl font-black text-transparent bg-clip-text bg-gradient-to-r from-white to-white/60 mb-8 tracking-tighter" {...props} />,
+        h2: ({ node, ...props }: any) => <h2 className="text-2xl md:text-3xl font-bold text-pink-200 mt-12 mb-6 flex items-center" {...props} />,
+        h3: ({ node, ...props }: any) => <h3 className="text-xl md:text-2xl font-bold text-white mt-10 mb-4 tracking-wide border-l-2 border-pink-500 pl-4" {...props} />,
+        h4: ({ node, ...props }: any) => <h4 className="text-lg font-semibold text-purple-200 mt-8 mb-3 uppercase tracking-wider" {...props} />,
+        p: ({ node, ...props }: any) => <p className="text-lg text-gray-300 leading-8 mb-6 font-light" {...props} />,
+        ul: ({ node, ...props }: any) => <ul className="space-y-3 mb-6 ml-2" {...props} />,
+        ol: ({ node, ...props }: any) => <ol className="space-y-3 mb-6 ml-2" {...props} />,
+        li: ({ node, ...props }: any) => (
+            <li className="flex items-start text-gray-300 leading-7 text-lg">
+                <div className="h-7 flex items-center mr-3 shrink-0">
+                    <svg className="w-2 h-2 text-pink-500" fill="currentColor" viewBox="0 0 8 8">
+                        <circle cx="4" cy="4" r="3" />
+                    </svg>
+                </div>
+                <div className="flex-1 [&>p]:m-0 [&>p]:leading-7">
+                    {props.children}
+                </div>
+            </li>
+        ),
+        // Table Support
+        table: ({ node, ...props }: any) => <div className="overflow-x-auto my-8 border border-white/10 rounded-xl"><table className="w-full text-left border-collapse" {...props} /></div>,
+        thead: ({ node, ...props }: any) => <thead className="bg-white/5" {...props} />,
+        tbody: ({ node, ...props }: any) => <tbody className="divide-y divide-white/5" {...props} />,
+        tr: ({ node, ...props }: any) => <tr className="hover:bg-white/5 transition-colors" {...props} />,
+        th: ({ node, ...props }: any) => <th className="p-4 border-b border-white/10 font-bold text-pink-300 whitespace-nowrap" {...props} />,
+        td: ({ node, ...props }: any) => <td className="p-4 text-gray-300 text-sm md:text-base leading-relaxed" {...props} />,
+        // Wiki Links
+        a: ({ node, href, children, ...props }: any) => {
+            if (href?.startsWith('wiki:')) {
+                return (
+                    <button
+                        type="button"
+                        onClick={(e) => {
+                            e.preventDefault();
+                            e.stopPropagation();
+                            handleWikiClick(href.replace('wiki:', ''));
+                        }}
+                        className="text-cyan-400 hover:text-cyan-300 transition-colors font-medium inline-block mx-1 group"
+                    >
+                        <span className="opacity-40 group-hover:opacity-60 transition-opacity">[[</span>
+                        <span className="underline underline-offset-4 decoration-cyan-500/30 group-hover:decoration-cyan-500/60">
+                            {children}
+                        </span>
+                        <span className="opacity-40 group-hover:opacity-60 transition-opacity">]]</span>
+                    </button>
+                );
+            }
+            return (
+                <a href={href} target="_blank" rel="noopener noreferrer" className="text-pink-400 hover:text-pink-300 underline underline-offset-4 decoration-pink-500/30" {...props}>
+                    {children}
+                </a>
+            );
+        },
+        strong: ({ node, ...props }: any) => <strong className="font-semibold text-white bg-white/5 px-1 rounded" {...props} />,
+        code: ({ node, ...props }: any) => <code className="font-mono text-sm bg-[#1a1b26] text-blue-300 px-1.5 py-0.5 rounded border border-white/5" {...props} />,
+        pre: ({ node, ...props }: any) => <pre className="bg-[#0a0a0c] p-6 rounded-2xl border border-white/10 overflow-x-auto my-8 shadow-inner" {...props} />,
+        blockquote: ({ node, ...props }: any) => <blockquote className="border-l-4 border-purple-500 pl-6 py-6 my-10 text-xl text-gray-300 italic bg-white/5 rounded-r-2xl [&>p]:m-0 shadow-lg" {...props} />,
+    }), []);
+
     return (
         <AnimatePresence>
             {topic && (
@@ -163,69 +224,17 @@ export default function TopicViewer({ topic, onClose }: TopicViewerProps) {
                                     <ReactMarkdown
                                         remarkPlugins={[remarkGfm]}
                                         urlTransform={(url) => url} // Allow all protocols including wiki:
-                                        li: ({node, ...props }: any) => (
-                                    <li className="flex items-start text-gray-300 leading-7 text-lg">
-                                        <div className="h-7 flex items-center mr-3 shrink-0">
-                                            <svg className="w-2 h-2 text-pink-500" fill="currentColor" viewBox="0 0 8 8">
-                                                <circle cx="4" cy="4" r="3" />
-                                            </svg>
-                                        </div>
-                                        <div className="flex-1 [&>p]:m-0 [&>p]:leading-7">
-                                            {props.children}
-                                        </div>
-                                    </li>
-                                    ),
-                                    // Table Support
-                                    table: ({node, ...props }: any) => <div className="overflow-x-auto my-8 border border-white/10 rounded-xl"><table className="w-full text-left border-collapse" {...props} /></div>,
-                                    thead: ({node, ...props }: any) => <thead className="bg-white/5" {...props} />,
-                                    tbody: ({node, ...props }: any) => <tbody className="divide-y divide-white/5" {...props} />,
-                                    tr: ({node, ...props }: any) => <tr className="hover:bg-white/5 transition-colors" {...props} />,
-                                    th: ({node, ...props }: any) => <th className="p-4 border-b border-white/10 font-bold text-pink-300 whitespace-nowrap" {...props} />,
-                                    td: ({node, ...props }: any) => <td className="p-4 text-gray-300 text-sm md:text-base leading-relaxed" {...props} />,
-                                    // Wiki Links
-                                    a: ({node, href, children, ...props }: any) => {
-            if (href?.startsWith('wiki:')) {
-                return (
-                                    <button
-                                        type="button"
-                                        onClick={(e) => {
-                                            e.preventDefault();
-                                            e.stopPropagation();
-                                            handleWikiClick(href.replace('wiki:', ''));
-                                        }}
-                                        className="text-cyan-400 hover:text-cyan-300 transition-colors font-medium inline-block mx-1 group"
+                                        components={markdownComponents}
                                     >
-                                        <span className="opacity-40 group-hover:opacity-60 transition-opacity">[[</span>
-                                        <span className="underline underline-offset-4 decoration-cyan-500/30 group-hover:decoration-cyan-500/60">
-                                            {children}
-                                        </span>
-                                        <span className="opacity-40 group-hover:opacity-60 transition-opacity">]]</span>
-                                    </button>
-                                    );
-            }
-                                    return (
-                                    <a href={href} target="_blank" rel="noopener noreferrer" className="text-pink-400 hover:text-pink-300 underline underline-offset-4 decoration-pink-500/30" {...props}>
-                                        {children}
-                                    </a>
-                                    );
-        },
-                                    strong: ({node, ...props }: any) => <strong className="font-semibold text-white bg-white/5 px-1 rounded" {...props} />,
-                                    code: ({node, ...props }: any) => <code className="font-mono text-sm bg-[#1a1b26] text-blue-300 px-1.5 py-0.5 rounded border border-white/5" {...props} />,
-                                    pre: ({node, ...props }: any) => <pre className="bg-[#0a0a0c] p-6 rounded-2xl border border-white/10 overflow-x-auto my-8 shadow-inner" {...props} />,
-                                    blockquote: ({node, ...props }: any) => <blockquote className="border-l-4 border-purple-500 pl-6 py-6 my-10 text-xl text-gray-300 italic bg-white/5 rounded-r-2xl [&>p]:m-0 shadow-lg" {...props} />,
-    }), []); // Dependencies empty because handleWikiClick relies on state setters which are stable, but relying on closure might be risky if handleWikiClick changes.Ideally handleWikiClick should be memoized or ref.
-    // Actually handleWikiClick uses state setters (stable).
-    
-                                    >
-                                    {processedContent}
-                                </ReactMarkdown>
+                                        {processedContent}
+                                    </ReactMarkdown>
                                 </article>
                             )}
-                    </div>
-                </motion.div>
-        </>
-    )
-}
+                        </div>
+                    </motion.div>
+                </>
+            )
+            }
         </AnimatePresence >
     );
 }
