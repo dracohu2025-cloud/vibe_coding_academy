@@ -9,6 +9,9 @@ export const metadata: Metadata = {
 import { LanguageProvider } from '@/contexts/LanguageContext';
 import MeshGradientBackground from '@/components/MeshGradientBackground';
 import BMCWidget from '@/components/BMCWidget';
+import Navbar from '@/components/Navbar';
+import { VibeCoach } from '@/components/VibeCoach';
+import Script from 'next/script';
 
 export default function RootLayout({
     children,
