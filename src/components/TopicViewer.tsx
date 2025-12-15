@@ -174,7 +174,9 @@ export default function TopicViewer({ topic, onClose }: TopicViewerProps) {
                                             li: ({ node, ...props }) => (
                                                 <li className="flex items-start text-gray-300 leading-7 text-lg">
                                                     <div className="h-7 flex items-center mr-3 shrink-0">
-                                                        <span className="text-pink-500 text-[8px] transform translate-y-[1px]">●</span>
+                                                        <svg className="w-2 h-2 text-pink-500" fill="currentColor" viewBox="0 0 8 8">
+                                                            <circle cx="4" cy="4" r="3" />
+                                                        </svg>
                                                     </div>
                                                     <div className="flex-1 [&>p]:m-0 [&>p]:leading-7">
                                                         {props.children}
