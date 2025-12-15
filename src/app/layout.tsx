@@ -11,6 +11,8 @@ import MeshGradientBackground from '@/components/MeshGradientBackground';
 import Navbar from '@/components/Navbar';
 import { VibeCoach } from '@/components/VibeCoach';
 
+import Script from 'next/script';
+
 export default function RootLayout({
     children,
 }: {
@@ -19,6 +21,19 @@ export default function RootLayout({
     return (
         <html lang="en">
             <body>
+                <Script
+                    src="https://www.googletagmanager.com/gtag/js?id=G-KD86VPRLVN"
+                    strategy="afterInteractive"
+                />
+                <Script id="google-analytics" strategy="afterInteractive">
+                    {`
+                      window.dataLayer = window.dataLayer || [];
+                      function gtag(){dataLayer.push(arguments);}
+                      gtag('js', new Date());
+                    
+                      gtag('config', 'G-KD86VPRLVN');
+                    `}
+                </Script>
                 <LanguageProvider>
                     <MeshGradientBackground />
                     <Navbar />
