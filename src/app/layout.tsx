@@ -2,8 +2,40 @@ import type { Metadata } from 'next';
 import './globals.css';
 
 export const metadata: Metadata = {
-    title: 'Vibe Coding',
-    description: 'Code with Soul.',
+    title: {
+        default: 'Vibe Coding Academy',
+        template: '%s | Vibe Coding'
+    },
+    description: 'Master the Art of Coding with Soul. An immersive journey into the modern full-stack ecosystem.',
+    keywords: ['Next.js', 'React', 'Coding', 'Full Stack', 'Vibe Coding', 'Software Engineering'],
+    authors: [{ name: 'Draco Hu' }],
+    creator: 'Draco Hu',
+    openGraph: {
+        type: 'website',
+        locale: 'en_US',
+        url: 'https://vibe-coding-academy.vercel.app',
+        title: 'Vibe Coding Academy',
+        description: 'Master the Art of Coding with Soul.',
+        siteName: 'Vibe Coding Academy',
+        images: [
+            {
+                url: '/og-image.jpg', // We should ensure this exists or use a default
+                width: 1200,
+                height: 630,
+                alt: 'Vibe Coding Academy',
+            },
+        ],
+    },
+    twitter: {
+        card: 'summary_large_image',
+        title: 'Vibe Coding Academy',
+        description: 'Code with Soul. Explore the modern tech stack.',
+        // images: ['/og-image.jpg'], // Same here
+        creator: '@dracohu',
+    },
+    icons: {
+        icon: '/favicon.ico',
+    },
 };
 
 import { LanguageProvider } from '@/contexts/LanguageContext';
