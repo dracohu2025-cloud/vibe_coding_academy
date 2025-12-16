@@ -30,7 +30,7 @@ phase: "wiki"
 ## How to use?
 
 In **Vibe Coding**, you mostly don't config it.
-**[Next.js](wiki:wiki_nextjs)** comes with ESLint configured.
+**[Next.js](wiki:wiki_next_js)** comes with ESLint configured.
 If you see a **Red** or **Yellow** squiggly line in VS Code, **DO NOT IGNORE IT**. Hover over it. Listen to the teacher.
 
 ## Vibe Advice

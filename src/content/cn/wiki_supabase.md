@@ -27,7 +27,7 @@ phase: "wiki"
 
 ## 怎么配合 Next.js 用？
 
-有了 [Next.js](wiki:nextjs) 和 Supabase，你就是全栈。
+有了 [Next.js](wiki:wiki_next_js) 和 Supabase，你就是全栈。
 
 * **前端**：用 Shadcn 画界面。
 * **后端**：用 Next.js Server Actions 接收请求。

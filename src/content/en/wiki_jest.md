@@ -25,7 +25,7 @@ It saves your life.
 * **Jest**: The King, by Facebook. Massive ecosystem. A bit slow to configure.
 * **Vitest**: The Challenger. Built on Vite. **Blazing Fast**. Compatible with Jest syntax.
 
-For modern **[Next.js](wiki:wiki_nextjs)** and Vite projects, **Vitest** is the Vibe.
+For modern **[Next.js](wiki:wiki_next_js)** and Vite projects, **Vitest** is the Vibe.
 
 ## How to use?
 

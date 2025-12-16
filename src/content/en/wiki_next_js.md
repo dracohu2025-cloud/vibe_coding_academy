@@ -7,7 +7,7 @@ phase: "wiki"
 
 > If React is the engine, Next.js is the race car.
 
-**Next.js** is the premier framework for building Web applications today. Built on top of [React](wiki:react), it provides everything you need to build production-grade apps "out of the box".
+**Next.js** is the premier framework for building Web applications today. Built on top of [React](wiki:wiki_react), it provides everything you need to build production-grade apps "out of the box".
 
 ---
 

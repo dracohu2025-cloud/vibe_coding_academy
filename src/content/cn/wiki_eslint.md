@@ -30,7 +30,7 @@ phase: "wiki"
 ## 怎么用？
 
 在 **Vibe Coding** 的世界里，你不需要配置它。
-**[Next.js](wiki:wiki_nextjs)** 默认集成了 ESLint。
+**[Next.js](wiki:wiki_next_js)** 默认集成了 ESLint。
 只要你看到编辑器里有**红色**或**黄色**的波浪线，**不要忽略它**。把鼠标放上去，看看老师说了什么。
 
 ## Vibe 建议

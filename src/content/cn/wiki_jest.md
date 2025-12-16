@@ -26,7 +26,7 @@ phase: "wiki"
 * **Jest**：老牌王者，Facebook 出品。生态最丰富，但配置稍微有点慢。
 * **Vitest**：新晋挑战者。基于 Vite。**极快**。完美兼容 Jest 的语法。
 
-对于 **[Next.js](wiki:wiki_nextjs)** 和 Vite 项目，现在的趋势是使用 **Vitest**。
+对于 **[Next.js](wiki:wiki_next_js)** 和 Vite 项目，现在的趋势是使用 **Vitest**。
 
 ## 怎么写？
 

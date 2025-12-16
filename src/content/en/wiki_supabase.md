@@ -27,7 +27,7 @@ phase: "wiki"
 
 ## Usage with Next.js
 
-With [Next.js](wiki:nextjs) and Supabase, you are Full Stack.
+With [Next.js](wiki:wiki_next_js) and Supabase, you are Full Stack.
 
 * **Frontend**: Shadcn for UI.
 * **Backend**: Next.js Server Actions for logic.

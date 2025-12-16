@@ -7,7 +7,7 @@ phase: "wiki"
 
 > 如果 React 是引擎，Next.js 就是整辆赛车。
 
-**Next.js** 是目前构建 Web 应用的首选框架。它构建在 [React](wiki:react) 之上，提供了开发生产级应用所需的一切"开箱即用"的功能。
+**Next.js** 是目前构建 Web 应用的首选框架。它构建在 [React](wiki:wiki_react) 之上，提供了开发生产级应用所需的一切"开箱即用"的功能。
 
 ---
 

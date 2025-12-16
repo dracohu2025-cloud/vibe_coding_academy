@@ -46,7 +46,7 @@ function Welcome(props) {
 
 Today, we rarely write "Vanilla React" directly. We usually use a **Web Framework**, with React as the core engine.
 
-* **[Next.js](wiki:nextjs)**: The official production framework recommended by React. It handles routing, rendering (SSR), and API routes for you.
+* **[Next.js](wiki:wiki_next_js)**: The official production framework recommended by React. It handles routing, rendering (SSR), and API routes for you.
 * **React Server Components (RSC)**: The latest paradigm. Components can run directly on the server, read from the database, and send the result to the browser. The line between frontend and backend is blurring.
 
 ## Vibe Advice

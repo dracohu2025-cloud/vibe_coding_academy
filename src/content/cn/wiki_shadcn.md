@@ -24,7 +24,7 @@ phase: "wiki"
 
 2. **构建在 Headless 之上**：
     * 它的底层是 `Radix UI`，处理了所有复杂的交互（无障碍访问、键盘导航）。
-    * 它的样式层是 [Tailwind CSS](wiki:tailwind)。
+    * 它的样式层是 [Tailwind CSS](wiki:wiki_tailwind_css)。
     * 它即使长得好看，又极度健壮。
 
 3. **Vibe 极高**：

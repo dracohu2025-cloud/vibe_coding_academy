@@ -46,7 +46,7 @@ function Welcome(props) {
 
 在今天，我们很少直接写纯 React ("Vanilla React")。我们通常使用 **Web 框架**，而 React 是这个框架的核心引擎。
 
-* **[Next.js](wiki:nextjs)**：React 官方推荐的生产级框架。它解决了路由、渲染（SSR）、API 等所有脏活累活。
+* **[Next.js](wiki:wiki_next_js)**：React 官方推荐的生产级框架。它解决了路由、渲染（SSR）、API 等所有脏活累活。
 * **React Server Components (RSC)**：最新的范式。组件可以直接在服务器上运行，直接读取数据库，然后把结果发给浏览器。前端和后端的界限正在消失。
 
 ## Vibe 建议
