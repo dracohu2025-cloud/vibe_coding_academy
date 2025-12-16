@@ -196,16 +196,7 @@ export default function TopicViewer({ topic, onClose }: TopicViewerProps) {
                                 </div>
                             )}
 
-                            {/* Close Button (Top Right) */}
-                            <div className="absolute top-6 right-6 z-20">
-                                <button
-                                    onClick={onClose}
-                                    className="p-2 rounded-full bg-white/5 hover:bg-white/10 transition-colors border border-white/10"
-                                    aria-label="Close"
-                                >
-                                    <X className="w-6 h-6 text-white" />
-                                </button>
-                            </div>
+
 
                             {loading ? (
                                 <div className="flex h-full items-center justify-center space-x-3">
