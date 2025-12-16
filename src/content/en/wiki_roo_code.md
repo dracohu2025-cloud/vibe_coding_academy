@@ -14,7 +14,7 @@ phase: "wiki"
 ### 1. BYOK (Bring Your Own Key)
 
 [[Cursor]] and [[Trae]] sell services.
-[[Roo Code]] does not. You buy your own API Key from OpenRouter (usually cheaper) and plug it in.
+[[Roo Code]] does not. You buy your own API Key from [[OpenRouter]] (usually cheaper) and plug it in.
 This means you can use the latest **DeepSeek**, **Claude**, or your own fine-tuned model. No middleman.
 
 ### 2. Modes

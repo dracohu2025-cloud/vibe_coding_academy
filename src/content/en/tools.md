@@ -76,7 +76,7 @@ A CLI-based operative.
 
 Open Source hero in VS Code.
 
-- **Feature**: **Bring Your Own Key**. Use your OpenRouter key. Cheap and effective.
+- **Feature**: **Bring Your Own Key**. Use your [[OpenRouter]] key. Cheap and effective.
 - **Modes**: Specialized modes like "Architect" and "Code" for different phases.
 
 ### **Augment Code** (Total Recall)
@@ -89,7 +89,17 @@ Open Source hero in VS Code.
 
 ---
 
-## 4. Tactical Terminal: Warp
+## 4. Logistics & Supply: OpenRouter
+
+If the tools above are weapons, **[[OpenRouter]]** is the universal **Ammo Depot**.
+It aggregates almost all mainstream models globally. With just one Key, you accessed pay-as-you-go top-tier models like Claude 3.5, GPT-4, and Gemini 1.5.
+
+- **BYOK (Bring Your Own Key)**: The secret to saving money in Vibe Coding.
+- **Freedom**: No longer bound by single-vendor subscriptions. Use whatever model you want.
+
+---
+
+## 5. Tactical Terminal: Warp
 
 Even with AI, you need a sidearm.
 **[[Warp]]** is the standard for the 21st Century. AI Command Search, Workflows, and Block Selection make the terminal human-friendly.

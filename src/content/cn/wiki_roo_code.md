@@ -14,7 +14,7 @@ phase: "wiki"
 ### 1. BYOK (Bring Your Own Key)
 
 [[Cursor]] 和 [[Trae]] 都是打包卖服务的。
-[[Roo Code]] 不卖服务。你自己去 OpenRouter 买 API Key（通常很便宜），然后填进去。
+[[Roo Code]] 不卖服务。你自己去 [[OpenRouter]] 买 API Key（通常很便宜），然后填进去。
 这意味着你可以用最新的 **DeepSeek**，也可以用 **Claude**，甚至用你自己微调的模型。想切就切，没有中间商赚差价。
 
 ### 2. 角色模式 (Modes)

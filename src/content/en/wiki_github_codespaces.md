@@ -61,7 +61,7 @@ The soul of Codespaces lives in the `.devcontainer` folder at the root of your p
 
 * `devcontainer.json`: Tells Codespaces which Extensions to install, which Linux Image to use.
 
-**Example (Auto-install ESLint and Prettier extensions for your environment):**
+**Example (Auto-install [[ESLint]] and Prettier extensions for your environment):**
 
 ```json
 // .devcontainer/devcontainer.json

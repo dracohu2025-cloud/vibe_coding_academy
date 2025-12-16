@@ -2,7 +2,7 @@
 
 > "In 2025, if you cannot connect to HuggingFace or GitHub freely, you are not sailing the ocean; you are paddling in a bathtub."
 
-For a Vibe Coder, the network is not just for browsing Reddit. It is your **Exocortex Connector**. Your AI Agent needs to call OpenRouter, your Docker needs to pull images, and your code needs to push to GitHub.
+For a Vibe Coder, the network is not just for browsing Reddit. It is your **Exocortex Connector**. Your AI Agent needs to call [[OpenRouter]], your Docker needs to pull images, and your code needs to push to GitHub.
 
 Mastering **Network Penetration** and **Traffic Routing** is not an elective course; it is a **Survival Skill**.
 

@@ -61,7 +61,7 @@ Codespaces 的灵魂在于根目录下的 `.devcontainer` 文件夹。
 
 * `devcontainer.json`: 告诉 Codespaces 要装什么插件 (Extensions)、用什么 Linux 镜像 (Image)。
 
-**示例 (让你的环境自动安装 ESLint 和 Prettier 插件):**
+**示例 (让你的环境自动安装 [[ESLint]] 和 Prettier 插件):**
 
 ```json
 // .devcontainer/devcontainer.json

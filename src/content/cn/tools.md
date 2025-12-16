@@ -76,7 +76,7 @@ Anthropic 的当家花旦。
 
 VS Code 里的开源英雄。
 
-- **特点**: **Bring Your Own Key**。你直接用 OpenRouter 的 Key，便宜又实惠。
+- **特点**: **Bring Your Own Key**。你直接用 [[OpenRouter]] 的 Key，便宜又实惠。
 - **模式**: 它有 "Architect" (架构师) 和 "Code" (工程师) 等不同模式，分工明确。
 
 ### **Augment Code** (记忆大师)
@@ -89,7 +89,17 @@ VS Code 里的开源英雄。
 
 ---
 
-## 4. 战术终端：Warp
+## 4. 后勤补给：OpenRouter
+
+如果上述工具是枪械，那 **[[OpenRouter]]** 就是通用的**弹药库**。
+它聚合了全球几乎所有的主流模型。你只需要一个 Key，就能按量付费调用 Claude 3.5, GPT-4, Gemini 1.5 等顶级模型。
+
+- **BYOK (Bring Your Own Key)**: 这是 Vibe Coding 的省钱秘籍。
+- **自由**: 不再受限于单一厂商的订阅，想用什么模型就用什么。
+
+---
+
+## 5. 战术终端：Warp
 
 哪怕 AI 再强，你也需要一个称手的兵器防身。
 **[[Warp]]** 依然是 21 世纪终端的标准答案。AI 命令搜索、工作流（Workflows）、块级选择，让命令行不再反人类。
