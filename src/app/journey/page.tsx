@@ -58,11 +58,24 @@ function JourneyContent() {
                     <h2 className="text-3xl md:text-4xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-purple-200 to-pink-300 inline-block">
                         {language === 'en' ? 'Knowledge Matrix' : 'Vibe 知识矩阵'}
                     </h2>
-                    <p className="text-white/60 max-w-2xl mx-auto">
+                    <p className="text-white/60 max-w-2xl mx-auto mb-8">
                         {language === 'en'
                             ? 'Explore the universe of modern development.'
                             : '探索现代开发的宇宙。'}
                     </p>
+
+                    <motion.button
+                        whileHover={{ scale: 1.05 }}
+                        whileTap={{ scale: 0.95 }}
+                        onClick={() => router.push('/journey?topic=glossary')}
+                        className="group relative inline-flex items-center gap-2 px-6 py-3 rounded-full bg-white/5 border border-white/10 hover:bg-white/10 transition-all duration-300"
+                    >
+                        <span className="text-xl">📖</span>
+                        <span className="bg-clip-text text-transparent bg-gradient-to-r from-purple-200 to-pink-300 font-semibold tracking-wide">
+                            {language === 'en' ? 'Wiki Glossary' : '全站词条索引'}
+                        </span>
+                        <div className="absolute inset-0 rounded-full ring-2 ring-white/20 group-hover:ring-white/40 transition-all duration-500 opacity-0 group-hover:opacity-100" />
+                    </motion.button>
                 </div>
 
                 <GlassBentoGrid
