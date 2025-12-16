@@ -1,5 +1,5 @@
 ---
-title: "[[Kilo]]"
+title: "Kilo"
 phase: "wiki"
 ---
 
@@ -7,7 +7,7 @@ phase: "wiki"
 
 > "What You See Is What You Get."
 
-**[[[[Kilo]]]] Code** attempts to bridge "Code" and "Vision".
+**[[Kilo]] Code** attempts to bridge "Code" and "Vision".
 
 ## Core Features
 
@@ -22,4 +22,4 @@ It runs in cloud containers. Environment (Node.js, Python, Docker) is pre-config
 
 ## Verdict
 
-**"For indie hackers wanting quick prototypes, [[[[Kilo]]]] is the fastest starting line."**
+**"For indie hackers wanting quick prototypes, [[Kilo]] is the fastest starting line."**

@@ -55,8 +55,8 @@ services:
 
 ## 4. 2025 AI 建议
 
-当你在写 `Dockerfile` 时，请直接问 [[[[Antigravity]]]] 或 Claude：
-> "为我的 [[[[Next.js]]]] 15 应用写一个生产级的多阶段构建 Dockerfile，使用 Alpine 镜像以减小体积。"
+当你在写 `Dockerfile` 时，请直接问 [[Antigravity]] 或 Claude：
+> "为我的 [[Next.js]] 15 应用写一个生产级的多阶段构建 Dockerfile，使用 Alpine 镜像以减小体积。"
 
  AI 会为你处理复杂的 Multi-stage builds，将你的镜像从 1GB 压缩到 80MB。这是极致的效率。
 

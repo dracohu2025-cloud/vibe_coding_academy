@@ -1,28 +1,28 @@
 ---
-title: "[[Next.js]]"
+title: "Next.js"
 phase: "wiki"
 ---
 
 # Next.js: React 的完全体
 
-> 如果 [[[[React]]]] 是引擎，[[[[Next.js]]]] 就是整辆赛车。
+> 如果 [[React]] 是引擎，[[Next.js]] 就是整辆赛车。
 
-**[[[[Next.js]]]]** 是目前构建 Web 应用的首选框架。它构建在 [React](wiki:wiki_react) 之上，提供了开发生产级应用所需的一切"开箱即用"的功能。
+**[[Next.js]]** 是目前构建 Web 应用的首选框架。它构建在 [React](wiki:wiki_react) 之上，提供了开发生产级应用所需的一切"开箱即用"的功能。
 
 ---
 
-## 为什么不能只用 [[[[React]]]]？
+## 为什么不能只用 React？
 
-纯 [[[[React]]]] 只是一个 UI 库。当你只用 [[[[React]]]] 时，你需要自己决定：
+纯 [[React]] 只是一个 UI 库。当你只用 [[React]] 时，你需要自己决定：
 
 * 怎么做路由跳转？(Route)
 * 怎么打包代码？(Bundling)
 * 怎么做 SEO？(SSR)
 * 怎么写后端 API？(Backend)
 
-[[[[Next.js]]]] 把这些都帮你做好了。
+[[Next.js]] 把这些都帮你做好了。
 
-## [[[[Next.js]]]] 的超能力
+## Next.js 的超能力
 
 1. **混合渲染 (Hybrid Rendering)**：
     * **CSR (Client Side Rendering)**: 传统的 SPA 模式，浏览器渲染。
@@ -47,10 +47,10 @@ phase: "wiki"
 
 ## Vercel
 
-[[[[Next.js]]]] 是由 **Vercel** 公司开发的。
-Vercel 是目前最好的前端部署平台。把你的 [[[[Next.js]]]] 代码推送到 GitHub，Vercel 就会自动部署，并分配一个全球 CDN 加速的网址。
+[[Next.js]] 是由 **Vercel** 公司开发的。
+Vercel 是目前最好的前端部署平台。把你的 [[Next.js]] 代码推送到 GitHub，Vercel 就会自动部署，并分配一个全球 CDN 加速的网址。
 
 ## Vibe 建议
 
-在 2025 年，**[[[[Next.js]]]] 就是全栈开发的标准答案**。
-不论你是做个人博客，还是做 SaaS 产品，[[[[Next.js]]]] 都能胜任。配合 [[[[Tailwind CSS]]]] 和 Shadcn UI，你简直无人能挡。
+在 2025 年，**[[Next.js]] 就是全栈开发的标准答案**。
+不论你是做个人博客，还是做 SaaS 产品，[[Next.js]] 都能胜任。配合 [[Tailwind CSS]] 和 Shadcn UI，你简直无人能挡。

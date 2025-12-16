@@ -1,5 +1,5 @@
 ---
-title: "[[TypeScript]]"
+title: "TypeScript"
 phase: "wiki"
 ---
 
@@ -7,7 +7,7 @@ phase: "wiki"
 
 > "Once you get used to IntelliSense, writing raw JS feels like running naked."
 
-**[[[[TypeScript]]]] (TS)** is a superset of JavaScript developed by Microsoft. Simply put, it adds **Types** to JS.
+**[[TypeScript]] (TS)** is a superset of JavaScript developed by Microsoft. Simply put, it adds **Types** to JS.
 
 ---
 

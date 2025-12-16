@@ -1,28 +1,28 @@
 ---
-title: "[[Next.js]]"
+title: "Next.js"
 phase: "wiki"
 ---
 
 # Next.js: The Complete Form of React
 
-> If [[[[React]]]] is the engine, [[[[Next.js]]]] is the race car.
+> If [[React]] is the engine, [[Next.js]] is the race car.
 
-**[[[[Next.js]]]]** is the premier framework for building Web applications today. Built on top of [React](wiki:wiki_react), it provides everything you need to build production-grade apps "out of the box".
+**[[Next.js]]** is the premier framework for building Web applications today. Built on top of [React](wiki:wiki_react), it provides everything you need to build production-grade apps "out of the box".
 
 ---
 
-## Why not just [[[[React]]]]?
+## Why not just React?
 
-Pure [[[[React]]]] is just a UI library. When you use only [[[[React]]]], you have to decide:
+Pure [[React]] is just a UI library. When you use only [[React]], you have to decide:
 
 * How to handle routing? (Route)
 * How to bundle code? (Bundling)
 * How to handle SEO? (SSR)
 * How to write backend APIs? (Backend)
 
-[[[[Next.js]]]] handles all of this for you.
+[[Next.js]] handles all of this for you.
 
-## [[[[Next.js]]]] Superpowers
+## Next.js Superpowers
 
 1. **Hybrid Rendering**:
     * **CSR (Client Side Rendering)**: Traditional SPA mode, browser renders everything.
@@ -47,10 +47,10 @@ Pure [[[[React]]]] is just a UI library. When you use only [[[[React]]]], you ha
 
 ## Vercel
 
-[[[[Next.js]]]] is developed by **Vercel**.
-Vercel is the best frontend deployment platform. Push your [[[[Next.js]]]] code to GitHub, and Vercel automatically deploys it with a global CDN.
+[[Next.js]] is developed by **Vercel**.
+Vercel is the best frontend deployment platform. Push your [[Next.js]] code to GitHub, and Vercel automatically deploys it with a global CDN.
 
 ## Vibe Advice
 
-In 2025, **[[[[Next.js]]]] is the default answer for Full Stack**.
-Whether you are building a personal blog or a SaaS product, [[[[Next.js]]]] can handle it. Paired with [[[[Tailwind CSS]]]] and Shadcn UI, you are unstoppable.
+In 2025, **[[Next.js]] is the default answer for Full Stack**.
+Whether you are building a personal blog or a SaaS product, [[Next.js]] can handle it. Paired with [[Tailwind CSS]] and Shadcn UI, you are unstoppable.

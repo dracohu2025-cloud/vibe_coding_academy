@@ -11,7 +11,7 @@ The world moves fast. "Game-changing" tools from months ago are now vintage. We 
 
 VS Code is the foundation, but we are building skyscrapers.
 
-### **[[[[Cursor]]]]** (Current King)
+### **Cursor** (Current King)
 
 Still the smoothest AI editor experience.
 
@@ -19,14 +19,14 @@ Still the smoothest AI editor experience.
 - **Cmd+K**: Muscle memory.
 - **Why**: Mature ecosystem, reliable.
 
-### **[[[[Trae]]]]** (The Challenger)
+### **Trae** (The Challenger)
 
 A dark horse from ByteDance. Completely free and incredibly powerful.
 
 - **Solo Mode**: A "fully autonomous" mode. You give it a requirement, it acts as a Senior Engineer: planning, coding, testing, and running.
-- **Native Fluent**: Exceptional understanding of context, sometimes beating [[[[Cursor]]]].
+- **Native Fluent**: Exceptional understanding of context, sometimes beating [[Cursor]].
 
-### **[[GitHub Codespaces]]** (The Cloud Base)
+### **GitHub Codespaces** (The Cloud Base)
 
 - **Strength**: The browser is your IDE.
 - **Dev Containers**: Solves environment configuration forever.
@@ -38,14 +38,14 @@ A dark horse from ByteDance. Completely free and incredibly powerful.
 
 Models are your ammo. In 2025, you only need to know two names.
 
-### **[[[[Gemini 3.0]]]]** (God of Vibe)
+### **Gemini 3.0** (God of Vibe)
 
 Google's masterpiece.
 
 - **Strength**: The definer of **Vibe Coding**. It understands not just code, but "feeling". Its multimodal capabilities (video/image input) are unmatched.
 - **Use Case**: Idea landing, frontend design, generating Apps from sketches.
 
-### **[[[[Claude 4.5]]]]** (The Logic Monster)
+### **Claude 4.5** (The Logic Monster)
 
 Anthropic's flagship.
 
@@ -58,41 +58,41 @@ Anthropic's flagship.
 
 When the Chat window isn't enough, call in the **Special Forces**. These aren't chatbots; they are **autonomous agents**.
 
-### **[[[[Antigravity]]]]** (Flagship)
+### **Antigravity** (Flagship)
 
 Not a tool, but a **Platform**.
 
 - **Concept**: "Code without gravity". Development happens in the cloud.
 - **Power**: Command a full **Team of Agents**. One writes tests, one implements, one reviews. The ultimate form of a "One-Person Company".
 
-### **[[[[Claude Code]]]]** (The Ghost)
+### **Claude Code** (The Ghost)
 
 A CLI-based operative.
 
 - **Operation**: No UI, just terminal. Give it permission, and it ghosts through your file system.
 - **Scenario**: "Replace the entire logging library with Pino and fix all errors." — It does it silently and submits a PR.
 
-### **[[[[Roo Code]]]]** (The Ranger)
+### **Roo Code** (The Ranger)
 
 Open Source hero in VS Code.
 
 - **Feature**: **Bring Your Own Key**. Use your OpenRouter key. Cheap and effective.
 - **Modes**: Specialized modes like "Architect" and "Code" for different phases.
 
-### **[[[[Augment Code]]]]** (Total Recall)
+### **Augment Code** (Total Recall)
 
 - **Strength**: Massive context memory. For legacy projects with millions of lines, Augment is the only one that instantly recalls "why we handle this error this way from 2 years ago."
 
-### **[[[[Kiro]]]]** / **[[[[Kilo]]]]** (The Rigorous)
+### **Kiro** / **Kilo** (The Rigorous)
 
 - **Feature**: **Spec-Driven**. They don't guess; they write documentation (Specs) first, then code. Perfect for mission-critical engineering.
 
 ---
 
-## 4. Tactical Terminal: [[[[Warp]]]]
+## 4. Tactical Terminal: Warp
 
 Even with AI, you need a sidearm.
-**[[[[Warp]]]]** is the standard for the 21st Century. AI Command Search, Workflows, and Block Selection make the terminal human-friendly.
+**[[Warp]]** is the standard for the 21st Century. AI Command Search, Workflows, and Block Selection make the terminal human-friendly.
 
 ---
 
@@ -101,5 +101,5 @@ Even with AI, you need a sidearm.
 In 2024, we learned how to **write** code.
 In 2025, your job is to **command** these powerful AI partners.
 
-Left hand **[[[[Trae]]]]/Cursor**, right hand **[[[[Antigravity]]]]**, ammo loaded with **[[[[Gemini 3.0]]]]**.
+Left hand **[[Trae]]/Cursor**, right hand **[[Antigravity]]**, ammo loaded with **[[Gemini 3.0]]**.
 Go create.

@@ -1,5 +1,5 @@
 ---
-title: "[[Augment Code]]"
+title: "Augment Code"
 phase: "wiki"
 ---
 
@@ -8,7 +8,7 @@ phase: "wiki"
 > "它记得一切。"
 
 所有的 AI 都有个弱点：**上下文窗口 (Context Window)**。它们记不住太多的东西。
-**[[[[Augment Code]]]]** 就是为了解决这个问题而生的。
+**[[Augment Code]]** 就是为了解决这个问题而生的。
 
 ## 核心特性
 

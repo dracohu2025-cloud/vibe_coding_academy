@@ -1,5 +1,5 @@
 ---
-title: "[[Jest/Vitest]]"
+title: "Jest/Vitest"
 phase: "wiki"
 ---
 

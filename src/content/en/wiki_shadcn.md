@@ -1,5 +1,5 @@
 ---
-title: "[[Shadcn/UI]]"
+title: "Shadcn/UI"
 phase: "wiki"
 ---
 
@@ -7,7 +7,7 @@ phase: "wiki"
 
 > "Give ownership to the builder."
 
-**[[[[Shadcn/UI]]]]** (pronounced like "Shad-cn") is the biggest frontend phenomenon of 2024-2025. But it is **NOT** a component library, nor an npm package like Material UI.
+**[[Shadcn/UI]]** (pronounced like "Shad-cn") is the biggest frontend phenomenon of 2024-2025. But it is **NOT** a component library, nor an npm package like Material UI.
 
 ---
 
@@ -29,7 +29,7 @@ When you need a "Button", you don't `npm install button`. You run a command, and
 
 3. **High Vibe**:
     * The default design is incredibly modern, clean, and premium.
-    * It is tailor-made for **[[[[Next.js]]]]** and **Tailwind**.
+    * It is tailor-made for **[[Next.js]]** and **Tailwind**.
 
 ## How to use?
 

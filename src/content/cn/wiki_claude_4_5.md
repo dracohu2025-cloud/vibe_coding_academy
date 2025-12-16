@@ -1,19 +1,19 @@
 ---
-title: "[[Claude 4.5]]"
+title: "Claude 4.5"
 phase: "wiki"
 ---
 
 # Claude 4.5 Sonnet: 逻辑怪兽
 
-> "如果是 Gemini 是艺术家，[[[[Claude 4.5]]]] 就是最严谨的架构师。"
+> "如果是 Gemini 是艺术家，[[Claude 4.5]] 就是最严谨的架构师。"
 
-Anthropic 发布的 **[[[[Claude 4.5]]]] Sonnet** 是目前地球上逻辑推理能力最强的 AI 模型。在复杂的后端逻辑、算法优化和系统架构设计上，它也是无敌的存在。
+Anthropic 发布的 **[[Claude 4.5]] Sonnet** 是目前地球上逻辑推理能力最强的 AI 模型。在复杂的后端逻辑、算法优化和系统架构设计上，它也是无敌的存在。
 
 ## 核心特性
 
 ### 1. 扩展思维 (Extended Thinking)
 
-这是 [[[[Claude 4.5]]]] 的杀手锏。在回答你复杂的代码问题前，它会先进入 "Thinking" 模式。
+这是 [[Claude 4.5]] 的杀手锏。在回答你复杂的代码问题前，它会先进入 "Thinking" 模式。
 它会像人类一样打草稿：
 
 1. "用户想实现这个功能..."
@@ -29,7 +29,7 @@ Anthropic 发布的 **[[[[Claude 4.5]]]] Sonnet** 是目前地球上逻辑推理
 
 ### 3. 听话 (Steerability)
 
-它最听劝。如果你在 `.cursorrules` 里定义了 "必须用 [[[[TypeScript]]]] 强类型"，它绝对不会给你写一个 `any`。
+它最听劝。如果你在 `.cursorrules` 里定义了 "必须用 [[TypeScript]] 强类型"，它绝对不会给你写一个 `any`。
 
 ## 最佳食用方法
 

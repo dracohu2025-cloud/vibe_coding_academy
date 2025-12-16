@@ -1,5 +1,5 @@
 ---
-title: "[[Antigravity]]"
+title: "Antigravity"
 phase: "wiki"
 ---
 
@@ -7,7 +7,7 @@ phase: "wiki"
 
 > "The IDE is dead. Long live the Platform."
 
-**[[[[Antigravity]]]]** is Google's next-gen development platform. It's not an editor; it's a **Cloud Agent Orchestration System**.
+**[[Antigravity]]** is Google's next-gen development platform. It's not an editor; it's a **Cloud Agent Orchestration System**.
 
 ## Core Concepts
 

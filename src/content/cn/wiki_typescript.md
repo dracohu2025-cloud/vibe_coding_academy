@@ -1,5 +1,5 @@
 ---
-title: "[[TypeScript]]"
+title: "TypeScript"
 phase: "wiki"
 ---
 
@@ -7,13 +7,13 @@ phase: "wiki"
 
 > "一旦你习惯了类型提示，裸写 JS 就像是在裸奔。"
 
-**[[[[TypeScript]]]] (TS)** 是 JavaScript 的超集，由 Microsoft 开发。简单说，就是给 JS 加上了**类型 (Types)**。
+**[[TypeScript]] (TS)** 是 JavaScript 的超集，由 Microsoft 开发。简单说，就是给 JS 加上了**类型 (Types)**。
 
 ---
 
 ## 为什么要给自己找麻烦？
 
-初学者通常讨厌 [[[[TypeScript]]]]。"为什么我要写 `name: string`？我知道它是字符串啊！"
+初学者通常讨厌 [[TypeScript]]。"为什么我要写 `name: string`？我知道它是字符串啊！"
 
 但当你写到项目第 1000 行时：
 
