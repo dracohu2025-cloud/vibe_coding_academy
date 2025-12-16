@@ -26,6 +26,12 @@ A dark horse from ByteDance. Completely free and incredibly powerful.
 - **Solo Mode**: A "fully autonomous" mode. You give it a requirement, it acts as a Senior Engineer: planning, coding, testing, and running.
 - **Native Fluent**: Exceptional understanding of context, sometimes beating Cursor.
 
+### **[[GitHub Codespaces]]** (The Cloud Base)
+
+- **Strength**: The browser is your IDE.
+- **Dev Containers**: Solves environment configuration forever.
+- **Scenario**: Remote work, coding on iPad, team collaboration.
+
 ---
 
 ## 2. Heavy Artillery: Lethal Models
