@@ -3,6 +3,7 @@
 import { motion, AnimatePresence } from 'framer-motion';
 import { X, ChevronLeft } from 'lucide-react';
 import { useState, useEffect, useMemo } from 'react';
+import { useRouter } from 'next/navigation';
 import { Topic } from '@/data/knowledge_data';
 import { useLanguage } from '@/contexts/LanguageContext';
 import ReactMarkdown from 'react-markdown';
@@ -18,6 +19,7 @@ interface TopicViewerProps {
 
 export default function TopicViewer({ topicId, topic, onClose, onNavigate }: TopicViewerProps) {
     const { language, t } = useLanguage();
+    const router = useRouter();
     const [metadata, setMetadata] = useState<any>(null);
     const [content, setContent] = useState<string>('');
     const [loading, setLoading] = useState(false);
@@ -128,12 +130,6 @@ export default function TopicViewer({ topicId, topic, onClose, onNavigate }: Top
         blockquote: ({ node, ...props }: any) => <blockquote className="border-l-4 border-purple-500 pl-6 py-6 my-10 text-xl text-gray-300 italic bg-white/5 rounded-r-2xl [&>p]:m-0 shadow-lg" {...props} />,
     }), [onNavigate]);
 
-    // Back uses Browser Back button now if we are using URL, 
-    // BUT since we are opening a modal, user might want a back button INSIDE the modal context 
-    // if they navigated deeper.
-    // However, if we rely on URL, standard browser back works great.
-    // Adding a visual "Back" button that calls history.back() is robust enough.
-
     return (
         <AnimatePresence>
             {topicId && (
@@ -150,20 +146,22 @@ export default function TopicViewer({ topicId, topic, onClose, onNavigate }: Top
                         animate={{ x: 0, opacity: 1 }}
                         exit={{ x: '100%', opacity: 0.5 }}
                         transition={{ type: 'spring', damping: 25, stiffness: 200 }}
-                        // CHANGED: w-[600px] -> w-full md:w-1/2
                         className="fixed inset-y-0 right-0 w-full md:w-1/2 glass-strong border-l border-white/10 shadow-2xl z-50 overflow-y-auto overscroll-contain"
                     >
                         <div className="p-8 md:p-12 relative min-h-full">
                             {/* Nebula Glow in Modal */}
                             <div className="absolute top-0 right-0 w-[300px] h-[300px] bg-purple-500/20 blur-[100px] rounded-full pointer-events-none" />
 
-                            {/* Back Button (Call native back) */}
-                            {/* We show it if we are not at the 'root' of sidebar... but hard to know without history stack check.
-                                For now, we rely on browser navigation or the X close (user can click outside).
-                                Let's add a "Back" button anyway that does window.history.back() for better UX?
-                                Or maybe just removing it is cleaner as per Vibe style + Browser Back support.
-                                User asked for "URL parameter", so Browser Back is the expected way.
-                             */}
+                            {/* Back Button (Top Left) */}
+                            <div className="absolute top-6 left-6 z-20">
+                                <button
+                                    onClick={() => router.back()}
+                                    className="p-2 rounded-full bg-white/5 hover:bg-white/10 transition-colors border border-white/10 text-white/70 hover:text-white group"
+                                    aria-label="Back"
+                                >
+                                    <ChevronLeft className="w-6 h-6 group-hover:-translate-x-1 transition-transform" />
+                                </button>
+                            </div>
 
                             {loading ? (
                                 <div className="flex h-full items-center justify-center space-x-3">
