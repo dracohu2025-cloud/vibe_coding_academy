@@ -1,79 +1,99 @@
-# The Cockpit: Tools of Trade
+# The Cockpit: Tools of Trade (2025 Edition)
 
-> "A worker is only as good as their tools. In 2025, your 'tool' is a Neural Exoskeleton."
+> "A worker is only as good as their tools. In 2025, your 'tools' are your autonomous squad."
 
-Welcome to the **Vibe Coding Arsenal**.
-We don't pick tools randomly. Our toolchain is like a Special Ops loadout—precision-engineered, where every item has a tactical purpose.
-
----
-
-## 1. The Core Engine: Cursor (AI IDE)
-
-This is no longer a debate. VS Code is great, but without native AI integration, it's like a gun without a scope.
-**Cursor** is the current King.
-
-### Pro Config Guide
-
-Don't use the defaults.
-
-1. **Model Selection**:
-    * `CMD + K` (Coding): Set to **Claude 3.5 Sonnet** (or newer). Best logic for code generation.
-    * `Chat` (Q&A): Set to **Gemini 1.5 Pro** or **GPT-4o** (for long-context search).
-2. **Rule System (.cursorrules)**:
-    * Create a `.cursorrules` file in your project root. This is the "House Rules" for your AI.
-    * **Example**:
-
-        ```text
-        - Always use TypeScript.
-        - Prefer Shadcn/UI components.
-        - Never modify files I didn't verify.
-        - Be concise. No yapping.
-        ```
-
-    * With this, the AI stops being an intern and becomes a Staff Engineer who knows your style.
-3. **Composer (Beta)**:
-    * Press `CMD + I` for Composer. This is "God Mode" for multi-file edits.
-    * Prompt: "Change the primary color from blue to purple across all components and update CSS variables." It modifies 20 files at once.
+Welcome to the **Vibe Coding Arsenal 2.0**.
+The world moves fast. "Game-changing" tools from months ago are now vintage. We don't do nostalgia; we do power.
 
 ---
 
-## 2. Special Forces: AI Agents
+## 1. Command Centers: AI IDEs
 
-When a task is too complex for a single Chat window, you need an **Agent**.
-Agents can run terminal commands, read/write files, and self-correct.
+VS Code is the foundation, but we are building skyscrapers.
 
-### Recommended Weapon: Cline (Open Source)
+### **Cursor** (Current King)
 
-An extension for VS Code / Cursor.
+Still the smoothest AI editor experience.
 
-* **Workflow**:
-    1. Give Cline a vague task: "Analyze `src/utils`, find duplicate functions, and refactor them."
-    2. Cline runs `ls` and `grep` to explore.
-    3. Cline proposes a plan and asks for approval.
-    4. You click "Approve", and it starts rewriting files on disk.
-* **Cost**: You pay specifically for the API usage (OpenRouter/Anthropic). Pennies for hours of human labor saved.
+- **Composer**: Its multi-file editing capability is still the benchmark.
+- **Cmd+K**: Muscle memory.
+- **Why**: Mature ecosystem, reliable.
 
----
+### **Trae** (The Challenger)
 
-## 3. Command Center: Warp (Terminal)
+A dark horse from ByteDance. Completely free and incredibly powerful.
 
-If you are still using the default system terminal, you are coding in the Stone Age.
-**Warp** is the terminal for the 21st Century.
-
-* **AI Command Search**: Forgot how to untar? Press `#`, type "extract tar", and it gives you the command.
-* **Workflows**: Save complex commands as reusable buttons.
-* **Block Select**: Output is not a stream of text; it's blocks. Easily copy just the error log from the last failed command.
+- **Solo Mode**: A "fully autonomous" mode. You give it a requirement, it acts as a Senior Engineer: planning, coding, testing, and running.
+- **Native Fluent**: Exceptional understanding of context, sometimes beating Cursor.
 
 ---
 
-## 4. Browser Enhancements
+## 2. Heavy Artillery: Lethal Models
 
-* **Arc Browser**: Its sidebar and split-view are designed for wide monitors. Use "Boosts" to CSS-hack any website (e.g., force Dark Mode on docs).
-* **React Developer Tools**: Mandatory. Inspect component trees and State changes.
-* **VisBug**: A Chrome extension that lets you edit live webpages like Figma (move elements, change text/color). Incredible for UI fine-tuning.
+Models are your ammo. In 2025, you only need to know two names.
+
+### **Gemini 3.0 Pro** (God of Vibe)
+
+Google's masterpiece.
+
+- **Strength**: The definer of **Vibe Coding**. It understands not just code, but "feeling". Its multimodal capabilities (video/image input) are unmatched.
+- **Use Case**: Idea landing, frontend design, generating Apps from sketches.
+
+### **Claude 4.5 Sonnet** (The Logic Monster)
+
+Anthropic's flagship.
+
+- **Strength**: Rigorous logic. It doesn't just code; it architects. Its "Thinking" mode performs deep reasoning.
+- **Use Case**: Complex backend logic, refactoring, system architecture.
+
+---
+
+## 3. Special Forces: Agentic Swarm
+
+When the Chat window isn't enough, call in the **Special Forces**. These aren't chatbots; they are **autonomous agents**.
+
+### **Google Antigravity** (Flagship)
+
+Not a tool, but a **Platform**.
+
+- **Concept**: "Code without gravity". Development happens in the cloud.
+- **Power**: Command a full **Team of Agents**. One writes tests, one implements, one reviews. The ultimate form of a "One-Person Company".
+
+### **Claude Code** (The Ghost)
+
+A CLI-based operative.
+
+- **Operation**: No UI, just terminal. Give it permission, and it ghosts through your file system.
+- **Scenario**: "Replace the entire logging library with Pino and fix all errors." — It does it silently and submits a PR.
+
+### **Roo Code** (The Ranger)
+
+Open Source hero in VS Code.
+
+- **Feature**: **Bring Your Own Key**. Use your OpenRouter key. Cheap and effective.
+- **Modes**: Specialized modes like "Architect" and "Code" for different phases.
+
+### **Augment Code** (Total Recall)
+
+- **Strength**: Massive context memory. For legacy projects with millions of lines, Augment is the only one that instantly recalls "why we handle this error this way from 2 years ago."
+
+### **Kiro / Kilo** (The Rigorous)
+
+- **Feature**: **Spec-Driven**. They don't guess; they write documentation (Specs) first, then code. Perfect for mission-critical engineering.
+
+---
+
+## 4. Tactical Terminal: Warp
+
+Even with AI, you need a sidearm.
+**Warp** is the standard for the 21st Century. AI Command Search, Workflows, and Block Selection make the terminal human-friendly.
+
+---
 
 ## Summary
 
-Your toolchain is not just software; it is your **Exoskeleton**.
-Cursor is your mechanical arm; Warp is your HUD; AI Agents are your drone swarms.
-Master them, configure them, until they disappear and become extensions of your will.
+In 2024, we learned how to **write** code.
+In 2025, your job is to **command** these powerful AI partners.
+
+Left hand **Trae/Cursor**, right hand **Antigravity**, ammo loaded with **Gemini 3.0**.
+Go create.
