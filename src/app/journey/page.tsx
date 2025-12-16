@@ -1,17 +1,29 @@
 'use client';
 
-import { useState } from 'react';
 import { motion } from 'framer-motion';
+import { useRouter, useSearchParams } from 'next/navigation';
 import GlassBentoGrid from '@/components/GlassBentoGrid';
 import TopicViewer from '@/components/TopicViewer';
-import { Topic } from '@/data/knowledge_data';
+import { Topic, knowledgeData } from '@/data/knowledge_data';
 import { useLanguage } from '@/contexts/LanguageContext';
 
 import BaseFooter from '@/components/BaseFooter';
 
 export default function JourneyPage() {
     const { language } = useLanguage();
-    const [selectedTopic, setSelectedTopic] = useState<Topic | null>(null);
+    const router = useRouter();
+    const searchParams = useSearchParams();
+    const topicId = searchParams.get('topic');
+
+    const selectedTopic = knowledgeData.find(t => t.id === topicId) || null;
+
+    const handleTopicSelect = (topic: Topic) => {
+        router.push(`/journey?topic=${topic.id}`);
+    };
+
+    const handleClose = () => {
+        router.push('/journey');
+    };
 
     return (
         <div className="min-h-screen pt-24 pb-12 px-4 md:px-8 md:max-w-7xl mx-auto flex flex-col">
@@ -33,7 +45,7 @@ export default function JourneyPage() {
                 </div>
 
                 <GlassBentoGrid
-                    onTopicSelect={setSelectedTopic}
+                    onTopicSelect={handleTopicSelect}
                     isBlurred={!!selectedTopic}
                 />
             </motion.div>
@@ -42,7 +54,7 @@ export default function JourneyPage() {
 
             <TopicViewer
                 topic={selectedTopic}
-                onClose={() => setSelectedTopic(null)}
+                onClose={handleClose}
             />
         </div>
     );
