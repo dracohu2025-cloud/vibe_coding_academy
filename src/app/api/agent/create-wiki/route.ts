@@ -12,14 +12,8 @@ const GITHUB_REPO = process.env.GITHUB_REPO; // vibe_coding_academy
 const OPENROUTER_API_KEY = process.env.OPENROUTER_API_KEY;
 
 // Init Clients
-const openai = new OpenAI({
-    apiKey: OPENROUTER_API_KEY,
-    baseURL: 'https://openrouter.ai/api/v1',
-});
+// Clients will be initialized in the handler
 
-const octokit = new Octokit({
-    auth: GITHUB_TOKEN,
-});
 
 const SYSTEM_PROMPT = `
 You are **Vibe**, the content creator for Vibe Coding Academy.
@@ -47,6 +41,20 @@ export async function POST(req: NextRequest) {
     }
 
     try {
+        // Init Clients (Lazy)
+        if (!process.env.OPENROUTER_API_KEY || !process.env.GITHUB_TOKEN) {
+            throw new Error('Missing OPENROUTER_API_KEY or GITHUB_TOKEN');
+        }
+
+        const openai = new OpenAI({
+            apiKey: process.env.OPENROUTER_API_KEY,
+            baseURL: 'https://openrouter.ai/api/v1',
+        });
+
+        const octokit = new Octokit({
+            auth: process.env.GITHUB_TOKEN,
+        });
+
         const { topic, lang = 'en' } = await req.json();
 
         // 1. Generate Content

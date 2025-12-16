@@ -5,14 +5,8 @@ import OpenAI from 'openai';
 // Switch to Node.js runtime to support future file writing (Agent creation)
 export const runtime = 'nodejs';
 
-const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL!;
-const supabaseKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!;
-const supabase = createClient(supabaseUrl, supabaseKey);
+// Init clients lazily in the handler to avoid build-time errors if env vars are missing
 
-const openai = new OpenAI({
-    apiKey: process.env.OPENROUTER_API_KEY,
-    baseURL: 'https://openrouter.ai/api/v1',
-});
 
 const SYSTEM_PROMPT = `
 You are **Vibe**, the AI Mentor of Vibe Coding Academy.
@@ -39,6 +33,21 @@ export async function POST(req: NextRequest) {
         const { messages } = await req.json();
         const lastMessage = messages[messages.length - 1];
         const userQuery = lastMessage.content;
+
+        // Init Clients (Lazy)
+        const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;
+        const supabaseKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
+        const openRouterKey = process.env.OPENROUTER_API_KEY;
+
+        if (!supabaseUrl || !supabaseKey || !openRouterKey) {
+            return new NextResponse('Missing Environment Variables (Supabase or OpenRouter)', { status: 500 });
+        }
+
+        const supabase = createClient(supabaseUrl, supabaseKey);
+        const openai = new OpenAI({
+            apiKey: openRouterKey,
+            baseURL: 'https://openrouter.ai/api/v1',
+        });
 
         // 1. Generate Embedding
         const embeddingResponse = await openai.embeddings.create({
