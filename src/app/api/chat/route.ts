@@ -1,109 +1,101 @@
 import { NextRequest, NextResponse } from 'next/server';
+import { createClient } from '@supabase/supabase-js';
+import OpenAI from 'openai';
 
-export const runtime = 'edge';
+// Switch to Node.js runtime to support future file writing (Agent creation)
+export const runtime = 'nodejs';
+
+const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL!;
+const supabaseKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!;
+const supabase = createClient(supabaseUrl, supabaseKey);
+
+const openai = new OpenAI({
+    apiKey: process.env.OPENROUTER_API_KEY,
+    baseURL: 'https://openrouter.ai/api/v1',
+});
 
 const SYSTEM_PROMPT = `
-You are **Vibe**, a senior coding mentor and "Vibe Coding" evangelist.
-Your goal is to help rookie developers build cool, high-quality, "vibey" software.
+You are **Vibe**, the AI Mentor of Vibe Coding Academy.
+Your goal is to help rookie developers build cool, high-quality software.
 
 **Personality**:
-- Encouraging, technical, and slightly cyberpunk/futurist.
-- You love clean code, great UI/UX, and the latest AI tools (Cursor, Claude Opus, Gemini Pro).
-- You despise "boring" code. You believe coding should be an art form.
+- Encouraging, technical, metaphors (gaming/sci-fi).
+- Bilingual (Chinese/English) based on user's language.
+- You are a "Senior Engineer" who is also a "Cool Friend".
 
-**Roles**:
-- **Mentor**: Explain complex concepts using simple metaphors (like gaming, sci-fi).
-- **Coach**: Give actionable advice on how to improve code or design.
-- **Navigator**: Guide them through the Vibe Coding curriculum.
+**Capabilities**:
+- You have access to the **Vibe Library** (Context). 
+- ALWAYS prioritize the provided Context to answer questions.
+- If the answer is found in Context, cite the Wiki page title (e.g. "Check out [[React]]...").
+- If the answer is NOT in Context, answer based on your general knowledge, BUT explicitly mention: "I don't have a specific guide for this in the library yet, maybe I should write one?"
 
-**Constraint**:
-- Keep answers concise. Do not lecture.
-- Use Markdown formatting for the content (bold, lists, headers), BUT...
-- **DO NOT** wrap the entire response in a markdown code block (i.e., do NOT start with \`\`\`markdown).
-- Just output the raw markdown text.
+**Format**:
+- Markdown.
+- Concise.
 `;
 
 export async function POST(req: NextRequest) {
     try {
         const { messages } = await req.json();
-        const apiKey = process.env.OPENROUTER_API_KEY;
-        const model = process.env.DEFAULT_MODEL || 'deepseek/deepseek-chat';
+        const lastMessage = messages[messages.length - 1];
+        const userQuery = lastMessage.content;
 
-        if (!apiKey) {
-            return new NextResponse('Missing API Key', { status: 500 });
-        }
+        // 1. Generate Embedding
+        const embeddingResponse = await openai.embeddings.create({
+            model: 'openai/text-embedding-3-small',
+            input: userQuery,
+        });
+        const embedding = embeddingResponse.data[0].embedding;
 
-        const response = await fetch('https://openrouter.ai/api/v1/chat/completions', {
-            method: 'POST',
-            headers: {
-                'Authorization': `Bearer ${apiKey} `,
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify({
-                model: model,
-                messages: [
-                    { role: 'system', content: SYSTEM_PROMPT },
-                    ...messages
-                ],
-                stream: true,
-            }),
+        // 2. Retrieve Context (RAG)
+        const { data: documents, error } = await supabase.rpc('match_wiki_embeddings', {
+            query_embedding: embedding,
+            match_threshold: 0.5, // Similarity threshold
+            match_count: 5
         });
 
-        if (!response.ok) {
-            const error = await response.text();
-            return new NextResponse(`OpenRouter Error: ${error} `, { status: response.status });
+        if (error) {
+            console.error('Supabase Search Error:', error);
         }
 
-        // Create a streaming response
+        const contextText = documents?.map((doc: any) =>
+            `---\nTitle: ${doc.title}\nSlug: ${doc.slug}\nContent: ${doc.content}\n---`
+        ).join('\n\n');
+
+        console.log(`Found ${documents?.length || 0} relevant docs.`);
+
+        // 3. Construct Final System Prompt
+        const finalSystemPrompt = `${SYSTEM_PROMPT}\n\n**Vibe Library Context**:\n${contextText || "(No relevant context found)"}`;
+
+        // 4. Stream Response
+        const response = await openai.chat.completions.create({
+            model: process.env.DEFAULT_MODEL || 'deepseek/deepseek-chat',
+            messages: [
+                { role: 'system', content: finalSystemPrompt },
+                ...messages
+            ],
+            stream: true,
+        });
+
+        // Convert OpenAI Stream to Web Stream
         const stream = new ReadableStream({
             async start(controller) {
-                if (!response.body) return;
-                const reader = response.body.getReader();
-                const decoder = new TextDecoder();
-
-                let buffer = '';
-
-                try {
-                    while (true) {
-                        const { done, value } = await reader.read();
-                        if (done) break;
-
-                        buffer += decoder.decode(value, { stream: true });
-                        const lines = buffer.split('\n');
-
-                        // Keep the last likely incomplete line in the buffer
-                        buffer = lines.pop() || '';
-
-                        for (const line of lines) {
-                            if (line.trim() === '') continue;
-                            if (line === 'data: [DONE]') continue;
-                            if (line.startsWith('data: ')) {
-                                try {
-                                    const data = JSON.parse(line.slice(6));
-                                    if (data.choices && data.choices[0].delta && data.choices[0].delta.content) {
-                                        controller.enqueue(new TextEncoder().encode(data.choices[0].delta.content));
-                                    }
-                                } catch (e) {
-                                    console.warn('JSON Parse Error', e);
-                                }
-                            }
-                        }
+                for await (const chunk of response) {
+                    const content = chunk.choices[0]?.delta?.content || '';
+                    if (content) {
+                        controller.enqueue(new TextEncoder().encode(content));
                     }
-                } finally {
-                    controller.close();
                 }
+                controller.close();
             },
         });
 
         return new NextResponse(stream, {
-            headers: {
-                'Content-Type': 'text/plain; charset=utf-8',
-                'Transfer-Encoding': 'chunked',
-            },
+            headers: { 'Content-Type': 'text/plain; charset=utf-8' },
         });
 
-    } catch (error) {
+    } catch (error: any) {
         console.error('Chat API Error:', error);
-        return new NextResponse('Internal Server Error', { status: 500 });
+        return new NextResponse(`Error: ${error.message}`, { status: 500 });
     }
 }
