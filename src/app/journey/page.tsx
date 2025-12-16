@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 import { useRouter, useSearchParams } from 'next/navigation';
 import GlassBentoGrid from '@/components/GlassBentoGrid';
 import TopicViewer from '@/components/TopicViewer';
-import VibeOmniSearch from '@/components/VibeOmniSearch';
+
 import { Topic, knowledgeData } from '@/data/knowledge_data';
 import { useLanguage } from '@/contexts/LanguageContext';
 
@@ -79,7 +79,7 @@ function JourneyContent() {
                     </motion.button>
                 </div>
 
-                <VibeOmniSearch />
+
 
                 <GlassBentoGrid
                     onTopicSelect={handleTopicSelect}
