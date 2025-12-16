@@ -11,7 +11,7 @@ The world moves fast. "Game-changing" tools from months ago are now vintage. We 
 
 VS Code is the foundation, but we are building skyscrapers.
 
-### **Cursor** (Current King)
+### **[[Cursor]]** (Current King)
 
 Still the smoothest AI editor experience.
 
@@ -19,7 +19,7 @@ Still the smoothest AI editor experience.
 - **Cmd+K**: Muscle memory.
 - **Why**: Mature ecosystem, reliable.
 
-### **Trae** (The Challenger)
+### **[[Trae]]** (The Challenger)
 
 A dark horse from ByteDance. Completely free and incredibly powerful.
 
@@ -32,14 +32,14 @@ A dark horse from ByteDance. Completely free and incredibly powerful.
 
 Models are your ammo. In 2025, you only need to know two names.
 
-### **Gemini 3.0 Pro** (God of Vibe)
+### **[[Gemini 3.0]]** (God of Vibe)
 
 Google's masterpiece.
 
 - **Strength**: The definer of **Vibe Coding**. It understands not just code, but "feeling". Its multimodal capabilities (video/image input) are unmatched.
 - **Use Case**: Idea landing, frontend design, generating Apps from sketches.
 
-### **Claude 4.5 Sonnet** (The Logic Monster)
+### **[[Claude 4.5]]** (The Logic Monster)
 
 Anthropic's flagship.
 
@@ -52,32 +52,32 @@ Anthropic's flagship.
 
 When the Chat window isn't enough, call in the **Special Forces**. These aren't chatbots; they are **autonomous agents**.
 
-### **Google Antigravity** (Flagship)
+### **[[Antigravity]]** (Flagship)
 
 Not a tool, but a **Platform**.
 
 - **Concept**: "Code without gravity". Development happens in the cloud.
 - **Power**: Command a full **Team of Agents**. One writes tests, one implements, one reviews. The ultimate form of a "One-Person Company".
 
-### **Claude Code** (The Ghost)
+### **[[Claude Code]]** (The Ghost)
 
 A CLI-based operative.
 
 - **Operation**: No UI, just terminal. Give it permission, and it ghosts through your file system.
 - **Scenario**: "Replace the entire logging library with Pino and fix all errors." — It does it silently and submits a PR.
 
-### **Roo Code** (The Ranger)
+### **[[Roo Code]]** (The Ranger)
 
 Open Source hero in VS Code.
 
 - **Feature**: **Bring Your Own Key**. Use your OpenRouter key. Cheap and effective.
 - **Modes**: Specialized modes like "Architect" and "Code" for different phases.
 
-### **Augment Code** (Total Recall)
+### **[[Augment Code]]** (Total Recall)
 
 - **Strength**: Massive context memory. For legacy projects with millions of lines, Augment is the only one that instantly recalls "why we handle this error this way from 2 years ago."
 
-### **Kiro / Kilo** (The Rigorous)
+### **[[Kiro]]** / **[[Kilo]]** (The Rigorous)
 
 - **Feature**: **Spec-Driven**. They don't guess; they write documentation (Specs) first, then code. Perfect for mission-critical engineering.
 
