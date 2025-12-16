@@ -1,5 +1,6 @@
 'use client';
 
+import { Suspense } from 'react';
 import { motion } from 'framer-motion';
 import { useRouter, useSearchParams } from 'next/navigation';
 import GlassBentoGrid from '@/components/GlassBentoGrid';
@@ -9,7 +10,7 @@ import { useLanguage } from '@/contexts/LanguageContext';
 
 import BaseFooter from '@/components/BaseFooter';
 
-export default function JourneyPage() {
+function JourneyContent() {
     const { language } = useLanguage();
     const router = useRouter();
     const searchParams = useSearchParams();
@@ -57,5 +58,13 @@ export default function JourneyPage() {
                 onClose={handleClose}
             />
         </div>
+    );
+}
+
+export default function JourneyPage() {
+    return (
+        <Suspense fallback={<div className="min-h-screen bg-[#0a0a0c]" />}>
+            <JourneyContent />
+        </Suspense>
     );
 }
