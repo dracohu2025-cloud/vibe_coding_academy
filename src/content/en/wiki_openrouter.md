@@ -18,13 +18,13 @@ For a Vibe Coder, this is essential infrastructure for the **"Bring Your Own Key
 
 ### The Pain Points
 
-* ❌ Want to use **Claude 4.5 Sonnet** for coding, **GPT-5.2** for reasoning, and **Gemini 3.0 Pro** for long videos. Do you really want to pay for 3 separate $20/month subscriptions?
+* ❌ Want to use **[[Claude 4.5]] Sonnet** for coding, **GPT-5.2** for reasoning, and **[[Gemini 3.0]] Pro** for long videos. Do you really want to pay for 3 separate $20/month subscriptions?
 * ❌ Many top-tier models (like Claude) have strict regional bans or payment difficulties in certain countries.
 * ❌ You only use a specific model occasionally. Paying a monthly fee feels wasteful.
 
 ### The OpenRouter Solution
 
-* ✅ **All-in-One**: One account for GPT-5.2, Claude 4.5, Gemini 3.0, Llama 4, DeepSeek...
+* ✅ **All-in-One**: One account for GPT-5.2, [[Claude 4.5]], [[Gemini 3.0]], Llama 4, DeepSeek...
 * ✅ **Pay-as-you-go**: No monthly fees. You pay for what you use via API, often cheaper than official pricing (no middleman markups, plus access to cheap open-source models).
 * ✅ **No Barriers**: As an aggregator, it handles the complex payment and regional restrictions for you.
 * ✅ **Reliability**: If the official API is down, [[OpenRouter]] often has backup routes.

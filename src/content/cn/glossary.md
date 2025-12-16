@@ -71,3 +71,11 @@ phase: "wiki"
 
 * **[[ESLint]]**：代码风格与错误的守门员。
 * **[[Jest/Vitest]]**：现代 Web 应用的测试框架。
+
+---
+
+## 🌐 网络与部署 (Deployment)
+
+### 基础设施 (Infra)
+
+* **[[Domain & DNS]]**：你的数字地契（域名）与互联网电话本（DNS）。

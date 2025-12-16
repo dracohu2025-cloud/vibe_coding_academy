@@ -71,3 +71,11 @@ Deep dives into all core concepts, tools, and tech stacks are indexed here.
 
 * **[[ESLint]]**: The gatekeeper of code style and errors.
 * **[[Jest/Vitest]]**: Modern testing frameworks for web apps.
+
+---
+
+## 🌐 Network & Deployment
+
+### Infrastructure
+
+* **[[Domain & DNS]]**: Your digital title deed (Domain) and the internet phonebook (DNS).
