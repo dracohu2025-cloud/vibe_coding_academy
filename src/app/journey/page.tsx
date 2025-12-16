@@ -10,13 +10,16 @@ import { useLanguage } from '@/contexts/LanguageContext';
 
 import BaseFooter from '@/components/BaseFooter';
 
+// ... (imports)
+
 function JourneyContent() {
     const { language } = useLanguage();
     const router = useRouter();
     const searchParams = useSearchParams();
     const topicId = searchParams.get('topic');
 
-    const selectedTopic = knowledgeData.find(t => t.id === topicId) || null;
+    // Find topic object if it exists (for initial metadata like phase colors), but we rely on topicId for open state
+    const selectedTopic = topicId ? (knowledgeData.find(t => t.id === topicId) || null) : null;
 
     const handleTopicSelect = (topic: Topic) => {
         router.push(`/journey?topic=${topic.id}`);
@@ -24,6 +27,10 @@ function JourneyContent() {
 
     const handleClose = () => {
         router.push('/journey');
+    };
+
+    const handleNavigate = (id: string) => {
+        router.push(`/journey?topic=${id}`);
     };
 
     return (
@@ -47,15 +54,17 @@ function JourneyContent() {
 
                 <GlassBentoGrid
                     onTopicSelect={handleTopicSelect}
-                    isBlurred={!!selectedTopic}
+                    isBlurred={!!topicId}
                 />
             </motion.div>
 
             <BaseFooter className="mt-12" />
 
             <TopicViewer
+                topicId={topicId}
                 topic={selectedTopic}
                 onClose={handleClose}
+                onNavigate={handleNavigate}
             />
         </div>
     );

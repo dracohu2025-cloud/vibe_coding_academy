@@ -2,7 +2,7 @@
 
 import { motion, AnimatePresence } from 'framer-motion';
 import { X, ChevronLeft } from 'lucide-react';
-import { useState, useEffect, useRef, useMemo } from 'react';
+import { useState, useEffect, useMemo } from 'react';
 import { Topic } from '@/data/knowledge_data';
 import { useLanguage } from '@/contexts/LanguageContext';
 import ReactMarkdown from 'react-markdown';
@@ -10,46 +10,33 @@ import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 
 interface TopicViewerProps {
+    topicId: string | null;
     topic: Topic | null;
     onClose: () => void;
+    onNavigate: (id: string) => void;
 }
 
-export default function TopicViewer({ topic, onClose }: TopicViewerProps) {
+export default function TopicViewer({ topicId, topic, onClose, onNavigate }: TopicViewerProps) {
     const { language, t } = useLanguage();
-    const [history, setHistory] = useState<string[]>([]);
-    const [currentId, setCurrentId] = useState<string | null>(null);
     const [metadata, setMetadata] = useState<any>(null);
-    // Restoration of missing states
     const [content, setContent] = useState<string>('');
     const [loading, setLoading] = useState(false);
 
-    // Initialize when topic prop changes
+    // Fetch content when topicId changes
     useEffect(() => {
-        if (topic) {
-            setHistory([topic.id]);
-            setCurrentId(topic.id);
-            setMetadata(null); // Reset metadata until fetch
-            document.body.style.overflow = 'hidden';
-        } else {
-            setHistory([]);
-            setCurrentId(null);
+        if (!topicId) {
             document.body.style.overflow = 'unset';
-            setLoading(false); // Ensure loading is reset
+            return;
         }
-    }, [topic]);
 
-    // Fetch content when currentId changes
-    useEffect(() => {
-        if (!currentId) return;
-
+        document.body.style.overflow = 'hidden';
         setLoading(true);
-        // If it's a wiki topic (starts with wiki_), we might not have a translation key, so we rely on frontmatter
-        const isWiki = currentId.startsWith('wiki_');
+        setMetadata(null); // Reset metadata
 
-        // If it's a regular topic, we can try to use the topic prop data initially for smoothness,
-        // but for Wiki traversal we rely on the API returning metadata.
+        // If simple topic, maybe use topic prop data first? 
+        // We will just fetch. The fetch is fast.
 
-        fetch(`/api/content/${language}/${currentId}`)
+        fetch(`/api/content/${language}/${topicId}`)
             .then(res => res.json())
             .then(data => {
                 setContent(data.content);
@@ -60,33 +47,13 @@ export default function TopicViewer({ topic, onClose }: TopicViewerProps) {
                 setContent('# Error loading content');
                 setLoading(false);
             });
-    }, [currentId, language]);
+    }, [topicId, language]);
 
-    const handleWikiClick = (id: string) => {
-        setHistory(prev => [...prev, id]);
-        setCurrentId(id);
-    };
 
-    const handleBack = () => {
-        if (history.length > 1) {
-            const newHistory = [...history];
-            newHistory.pop(); // Remove current
-            setHistory(newHistory);
-            setCurrentId(newHistory[newHistory.length - 1]);
-        }
-    };
-
-    // Helper to get display title
-    const getDisplayTitle = () => {
-        if (metadata?.title) return metadata.title;
-        // Fallback for initial topic
-        if (topic && topic.id === currentId) return t(topic.translationKey + '.title');
-        return 'Loading...';
-    };
-
+    // Helper to get display phase
     const getDisplayPhase = () => {
         if (metadata?.phase) return metadata.phase;
-        if (topic && topic.id === currentId) return topic.phase;
+        if (topic) return topic.phase;
         return 'WIKI';
     };
 
@@ -100,7 +67,7 @@ export default function TopicViewer({ topic, onClose }: TopicViewerProps) {
         });
     }, [content]);
 
-    // Memoize markdown components to prevent re-creation on every render
+    // Memoize markdown components
     const markdownComponents = useMemo(() => ({
         h1: ({ node, ...props }: any) => <h1 className="text-4xl md:text-5xl font-black text-transparent bg-clip-text bg-gradient-to-r from-white to-white/60 mb-8 tracking-tighter" {...props} />,
         h2: ({ node, ...props }: any) => <h2 className="text-2xl md:text-3xl font-bold text-pink-200 mt-12 mb-6 flex items-center" {...props} />,
@@ -137,7 +104,7 @@ export default function TopicViewer({ topic, onClose }: TopicViewerProps) {
                         onClick={(e) => {
                             e.preventDefault();
                             e.stopPropagation();
-                            handleWikiClick(href.replace('wiki:', ''));
+                            onNavigate(href.replace('wiki:', ''));
                         }}
                         className="text-cyan-400 hover:text-cyan-300 transition-colors font-medium inline-block mx-1 group"
                     >
@@ -159,11 +126,17 @@ export default function TopicViewer({ topic, onClose }: TopicViewerProps) {
         code: ({ node, ...props }: any) => <code className="font-mono text-sm bg-[#1a1b26] text-blue-300 px-1.5 py-0.5 rounded border border-white/5" {...props} />,
         pre: ({ node, ...props }: any) => <pre className="bg-[#0a0a0c] p-6 rounded-2xl border border-white/10 overflow-x-auto my-8 shadow-inner" {...props} />,
         blockquote: ({ node, ...props }: any) => <blockquote className="border-l-4 border-purple-500 pl-6 py-6 my-10 text-xl text-gray-300 italic bg-white/5 rounded-r-2xl [&>p]:m-0 shadow-lg" {...props} />,
-    }), []);
+    }), [onNavigate]);
+
+    // Back uses Browser Back button now if we are using URL, 
+    // BUT since we are opening a modal, user might want a back button INSIDE the modal context 
+    // if they navigated deeper.
+    // However, if we rely on URL, standard browser back works great.
+    // Adding a visual "Back" button that calls history.back() is robust enough.
 
     return (
         <AnimatePresence>
-            {topic && (
+            {topicId && (
                 <>
                     <motion.div
                         initial={{ opacity: 0 }}
@@ -177,26 +150,20 @@ export default function TopicViewer({ topic, onClose }: TopicViewerProps) {
                         animate={{ x: 0, opacity: 1 }}
                         exit={{ x: '100%', opacity: 0.5 }}
                         transition={{ type: 'spring', damping: 25, stiffness: 200 }}
-                        className="fixed inset-y-0 right-0 w-full md:w-[600px] lg:w-[800px] glass-strong border-l border-white/10 shadow-2xl z-50 overflow-y-auto overscroll-contain"
+                        // CHANGED: w-[600px] -> w-full md:w-1/2
+                        className="fixed inset-y-0 right-0 w-full md:w-1/2 glass-strong border-l border-white/10 shadow-2xl z-50 overflow-y-auto overscroll-contain"
                     >
                         <div className="p-8 md:p-12 relative min-h-full">
                             {/* Nebula Glow in Modal */}
                             <div className="absolute top-0 right-0 w-[300px] h-[300px] bg-purple-500/20 blur-[100px] rounded-full pointer-events-none" />
 
-                            {/* Back Button (Top Left) */}
-                            {history.length > 1 && (
-                                <div className="absolute top-6 left-6 z-20">
-                                    <button
-                                        onClick={handleBack}
-                                        className="p-2 rounded-full bg-white/5 hover:bg-white/10 transition-colors border border-white/10 text-white/70 hover:text-white group"
-                                        aria-label="Back"
-                                    >
-                                        <ChevronLeft className="w-6 h-6 group-hover:-translate-x-1 transition-transform" />
-                                    </button>
-                                </div>
-                            )}
-
-
+                            {/* Back Button (Call native back) */}
+                            {/* We show it if we are not at the 'root' of sidebar... but hard to know without history stack check.
+                                For now, we rely on browser navigation or the X close (user can click outside).
+                                Let's add a "Back" button anyway that does window.history.back() for better UX?
+                                Or maybe just removing it is cleaner as per Vibe style + Browser Back support.
+                                User asked for "URL parameter", so Browser Back is the expected way.
+                             */}
 
                             {loading ? (
                                 <div className="flex h-full items-center justify-center space-x-3">
