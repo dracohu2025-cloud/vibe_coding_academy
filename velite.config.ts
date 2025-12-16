@@ -26,13 +26,20 @@ const wikis = defineCollection({
             // Let's use `raw` field to get the original content.
             raw: s.raw()
         })
-        .transform((data, { meta }) => ({
-            ...data,
-            lang: meta.path.split('/')[2], // src/content/[lang]/[id].md -> index 2 is lang
-            slug: meta.path.split('/').pop()?.replace('.md', '') || '',
-            // We will output 'content' as the raw markdown for now to match current API contract
-            content: data.raw
-        }))
+        .transform((data, { meta }) => {
+            const pathParts = meta.path.split('/');
+            // Locate 'src/content' or just 'content' to be safe
+            // We assume structure is .../content/[lang]/[slug].md
+            const contentIndex = pathParts.lastIndexOf('content');
+            const lang = (contentIndex !== -1 && pathParts[contentIndex + 1]) ? pathParts[contentIndex + 1] : 'en';
+
+            return {
+                ...data,
+                lang,
+                slug: pathParts.pop()?.replace('.md', '') || '',
+                content: data.raw
+            };
+        })
 })
 
 export default defineConfig({
