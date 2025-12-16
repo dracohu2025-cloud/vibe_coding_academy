@@ -19,6 +19,14 @@ Still the smoothest AI editor experience.
 - **Cmd+K**: Muscle memory.
 - **Why**: Mature ecosystem, reliable.
 
+### **Velite** (The Content Butler)
+
+The unsung hero of Vibe Coding Academy.
+
+- **Role**: Type-safe Content Layer.
+- **Function**: Turns your Markdown into TypeScript data.
+- **Status**: The best successor to Contentlayer.
+
 ### **Trae** (The Challenger)
 
 A dark horse from ByteDance. Completely free and incredibly powerful.

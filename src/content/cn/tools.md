@@ -19,6 +19,14 @@ VS Code 依然是地基，但我们需要在上面盖摩天大楼。
 - **Cmd+K**: 肌肉记忆。
 - **优势**: 极其成熟，生态完善。
 
+### **Velite** (内容管家)
+
+Vibe Coding Academy 的幕后英雄。
+
+- **定位**: 类型安全的内容层 (Content Layer)。
+- **作用**: 把你的 Markdown 变成 TypeScript 数据。
+- **替代**: 它是 Contentlayer 的最佳接班人。
+
 ### **Trae** (强力挑战者)
 
 来自字节跳动的黑马，完全免费且极其强大。
