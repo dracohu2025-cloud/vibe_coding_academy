@@ -24,8 +24,8 @@ phase: "wiki"
 
 ### OpenRouter 的解法
 
-* ✅ **一号通吃**：一个账号，同时使用 GPT-4, Claude 3, Gemini, Llama 3, DeepSeek...
-* ✅ **按量付费**：用多少算多少，没有月费。通过 API 调用，价格通常比官网更便宜（因为没有中间商赚差价，且很多开源模型极便宜）。
+* ✅ **一号通吃**：一个账号，同时使用 GPT-5.2, Claude 4.5, Gemini 3.0, Llama 4...
+* ✅ **按量付费**：用多少算多少，没有月费。通过 API 调用，价格通常比官网更便宜。
 * ✅ **无视门槛**：它作为一个聚合商，帮你解决了复杂的支付和地区限制问题。
 * ✅ **永不掉线**：官网挂了？[[OpenRouter]] 通常还有备份线路。
 
@@ -60,8 +60,8 @@ phase: "wiki"
 2. **API Provider** 选择 `[[OpenRouter]]`。
 3. 把刚才那串 `sk-or-...` 粘贴进去。
 4. **Model** 选择：
-    * `anthropic/claude-3.5-sonnet` (目前最强编程模型)
-    * `google/gemini-2.0-flash-001` (速度极快且免费/极便宜)
+    * `anthropic/claude-4.5-sonnet` (目前最强编程模型)
+    * `google/gemini-3.0-pro` (速度极快且多模态能力最强)
     * `deepseek/deepseek-r1` (国产之光，性价比极高)
 
 ### 场景二：配合 **Cursor**
@@ -72,7 +72,7 @@ phase: "wiki"
 2. 找到 **Models** -> **OpenAI API Key** (注意：很多插件借用 OpenAI 的格式来兼容 OpenRouter)。
 3. **Base URL** 填：`https://openrouter.ai/api/v1`
 4. **API Key** 填你的 [[OpenRouter]] Key。
-5. 然后添加你想用的模型名字（去 [[OpenRouter]] 官网查 ID，例如 `google/gemini-pro-1.5`）。
+5. 然后添加你想用的模型名字（去 [[OpenRouter]] 官网查 ID，例如 `google/gemini-pro-3.0`）。
 
 ---
 
@@ -82,10 +82,10 @@ phase: "wiki"
 
 | 模型 ID | 绰号 | 场景 | 特点 |
 | :--- | :--- | :--- | :--- |
-| `anthropic/claude-3.5-sonnet` | **代码之神** | 复杂代码生成、架构设计 | 目前逻辑最强，写代码最不容易出错。 |
-| `google/gemini-2.0-flash-001` | **闪电侠** | 快速问答、长文档分析 | 速度极快，窗口巨大（1M Context），不要钱或是白菜价。 |
+| `anthropic/claude-4.5-sonnet` | **代码之神** | 复杂代码生成、架构设计 | 目前逻辑最强，写代码最不容易出错。 |
+| `google/gemini-3.0-pro` | **全能王** | 视频分析、超长文档 | 窗口巨大（10M Context），多模态能力无敌。 |
+| `openai/gpt-5.2` | **思考者** | 极难的逻辑推理 | 推理能力的天花板，虽然贵，但能解决疑难杂症。 |
 | `deepseek/deepseek-coder` | **国产之光** | 日常补全、中文注释 | 性价比极致，中文理解最好。 |
-| `openai/o1-preview` | **思考者** | 极难的逻辑推理 | 会思考很久再回答，贵，但能解决疑难杂症。 |
 
 ---
 

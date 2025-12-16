@@ -18,13 +18,13 @@ For a Vibe Coder, this is essential infrastructure for the **"Bring Your Own Key
 
 ### The Pain Points
 
-* ❌ Want to use **Claude 3.5 Sonnet** for coding, **GPT-4o** for docs, and **Gemini 1.5 Pro** for long videos. Do you really want to pay for 3 separate $20/month subscriptions?
+* ❌ Want to use **Claude 4.5 Sonnet** for coding, **GPT-5.2** for reasoning, and **Gemini 3.0 Pro** for long videos. Do you really want to pay for 3 separate $20/month subscriptions?
 * ❌ Many top-tier models (like Claude) have strict regional bans or payment difficulties in certain countries.
 * ❌ You only use a specific model occasionally. Paying a monthly fee feels wasteful.
 
 ### The OpenRouter Solution
 
-* ✅ **All-in-One**: One account for GPT-4, Claude 3, Gemini, Llama 3, DeepSeek...
+* ✅ **All-in-One**: One account for GPT-5.2, Claude 4.5, Gemini 3.0, Llama 4, DeepSeek...
 * ✅ **Pay-as-you-go**: No monthly fees. You pay for what you use via API, often cheaper than official pricing (no middleman markups, plus access to cheap open-source models).
 * ✅ **No Barriers**: As an aggregator, it handles the complex payment and regional restrictions for you.
 * ✅ **Reliability**: If the official API is down, [[OpenRouter]] often has backup routes.
@@ -60,8 +60,8 @@ This is where [[OpenRouter]] shines. Modern AI Editors ([[Cursor]], [[Roo Code]]
 2. **API Provider**: Select `[[OpenRouter]]`.
 3. Paste your `sk-or-...` key.
 4. **Model**: Choose:
-    * `anthropic/claude-3.5-sonnet` (The God of Coding right now)
-    * `google/gemini-2.0-flash-001` (Fast and free/cheap)
+    * `anthropic/claude-4.5-sonnet` (The God of Coding right now)
+    * `google/gemini-3.0-pro` (Fast and multimodal king)
     * `deepseek/deepseek-r1` (Best value for money)
 
 ### Scenario 2: With **Cursor**
@@ -72,7 +72,7 @@ Although [[Cursor]] has its own fleet, if you want access to models they don't o
 2. Find **Models** -> **OpenAI API Key** (Note: Many tools use the OpenAI format to be compatible with OpenRouter).
 3. **Base URL**: Enter `https://openrouter.ai/api/v1`
 4. **API Key**: Enter your [[OpenRouter]] Key.
-5. Add the model name manually (check [[OpenRouter]] IDs, e.g., `google/gemini-pro-1.5`).
+5. Add the model name manually (check [[OpenRouter]] IDs, e.g., `google/gemini-pro-3.0`).
 
 ---
 
@@ -82,10 +82,10 @@ Although [[Cursor]] has its own fleet, if you want access to models they don't o
 
 | Model ID | Nickname | Use Case | Features |
 | :--- | :--- | :--- | :--- |
-| `anthropic/claude-3.5-sonnet` | **Code God** | Complex coding, Architecture | Strongest logic, fewest bugs. |
-| `google/gemini-2.0-flash-001` | **The Flash** | Quick Q&A, Long docs | Insane speed, huge context (1M), dirt cheap or free. |
+| `anthropic/claude-4.5-sonnet` | **Code God** | Complex coding, Architecture | Strongest logic, fewest bugs. |
+| `google/gemini-3.0-pro` | **The Omniscient** | Video analysis, Long docs | Huge context (10M), unmatched multimodal. |
+| `openai/gpt-5.2` | **The Thinker** | Hard logic puzzles | Reasoning ceiling. Expensive, but solves the unsolvable. |
 | `deepseek/deepseek-coder` | **Value King** | Autocomplete, Comments | Extreme cost-performance ratio. |
-| `openai/o1-preview` | **The Thinker** | Hard logic puzzles | Thinks before speaking. Expensive, but solves the unsolvable. |
 
 ---
 
