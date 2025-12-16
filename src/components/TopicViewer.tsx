@@ -64,7 +64,7 @@ export default function TopicViewer({ topicId, topic, onClose, onNavigate }: Top
         if (!content) return '';
         // Replace [[Term]] with [Term](wiki:wiki_term_normalized)
         return content.replace(/\[\[(.*?)\]\]/g, (match, term) => {
-            const normalized = 'wiki_' + term.trim().toLowerCase().replace(/[^a-z0-9]/g, '_');
+            const normalized = 'wiki_' + term.trim().toLowerCase().replace(/[^a-z0-9]+/g, '_').replace(/^_+|_+$/g, '');
             return `[${term}](wiki:${normalized})`;
         });
     }, [content]);
