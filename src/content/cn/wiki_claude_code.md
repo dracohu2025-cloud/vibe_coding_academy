@@ -1,13 +1,13 @@
 ---
-title: "Claude Code"
+title: "[[Claude Code]]"
 phase: "wiki"
 ---
 
-# Claude Code: 终端里的幽灵
+# [[Claude Code]]: 终端里的幽灵
 
 > "GUI 只是累赘。真正的黑客只用命令行。"
 
-**Claude Code** 是 Anthropic 推出的 CLI (命令行) 工具。它没有花哨的界面，它就活在你的 Terminal 里。
+**[[Claude Code]]** 是 Anthropic 推出的 CLI (命令行) 工具。它没有花哨的界面，它就活在你的 Terminal 里。
 
 ## 核心玩法
 

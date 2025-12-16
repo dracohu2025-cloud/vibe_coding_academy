@@ -1,13 +1,13 @@
 ---
-title: "Antigravity"
+title: "[[Antigravity]]"
 phase: "wiki"
 ---
 
-# Google Antigravity: 代码摆脱引力
+# Google [[Antigravity]]: 代码摆脱引力
 
 > "IDE 已经死了。平台万岁。"
 
-**Antigravity** (反重力) 是 Google 推出的下一代开发平台。它不是一个编辑器，它是一个**云端 Agent 编排系统**。
+**[[Antigravity]]** (反重力) 是 Google 推出的下一代开发平台。它不是一个编辑器，它是一个**云端 Agent 编排系统**。
 
 ## 核心概念
 
@@ -18,7 +18,7 @@ phase: "wiki"
 
 ### 2. Agent 战队 (Swarm)
 
-在 Antigravity 里，你不是一个人在战斗。
+在 [[Antigravity]] 里，你不是一个人在战斗。
 你可以召唤一个 **Agent 战队**：
 
 * **Architect Agent**: 负责看需求，拆解任务。

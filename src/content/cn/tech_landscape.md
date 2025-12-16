@@ -11,8 +11,8 @@
 
 **结论**：学习 **[[React]]**。
 
-* **[[React]] (The King)**：市场占有率第一，生态第一，AI 辅助代码质量第一。[[Next.js]] 基于 React。学习 React 就是学习通用语。
-* **[[Vue]] (The Elegant)**：国内很多老项目和中小厂在用。上手简单，模板语法清晰。但在 2025 年，它的 TS 支持和 AI 代码生成能力（如 v0.dev）略逊于 React 生态。
+* **[[React]] (The King)**：市场占有率第一，生态第一，AI 辅助代码质量第一。[[Next.js]] 基于 [[React]]。学习 [[React]] 就是学习通用语。
+* **[[Vue]] (The Elegant)**：国内很多老项目和中小厂在用。上手简单，模板语法清晰。但在 2025 年，它的 TS 支持和 AI 代码生成能力（如 v0.dev）略逊于 [[React]] 生态。
 * **Svelte / Solid (The Vibe)**：极客的最爱。没有 Virtual DOM，极快。适合个人项目，但找工作略难。
 * **[[Angular]]**：如果你不去 Google 或超大型传统企业，请忽略它。
 
@@ -37,21 +37,21 @@
 
 **结论**：**[[Next.js]] (全栈)** 或 **Python (AI)**。
 
-* **[[Next.js]] (Node.js)**：对于 90% 的 Web 应用，你不需要独立的后端。Next.js 的 Server Actions 足以处理数据库读写。全栈用 [[TypeScript]]，思维无缝切换。
+* **[[Next.js]] (Node.js)**：对于 90% 的 Web 应用，你不需要独立的后端。[[Next.js]] 的 Server Actions 足以处理数据库读写。全栈用 [[TypeScript]]，思维无缝切换。
 * **Python (FastAPI / Django)**：如果你要重度集成 AI、数据分析。Python 是 AI 的母语。FastAPI 是目前最现代的 Python 框架。
 * **Go (Gin / Echo)**：追求极致的高并发性能。字节跳动、Uber 的选择。新手暂时用不到。
 * **Java (Spring Boot)**：大型互联网公司、银行、国企的标准。如果你为了求职（特别是进大厂），这是必修课。但它很重，不适合 Vibe Coding。
 
-**Vibe 路线**：Next.js 本身就是后端。如果需要 AI 服务，起一个 FastAPI 微服务。
+**Vibe 路线**：[[Next.js]] 本身就是后端。如果需要 AI 服务，起一个 FastAPI 微服务。
 
 ---
 
 ## 4. 跨平台开发 (The Multi-verse)
 
-**结论**：**React Native (Expo)**。
+**结论**：**[[React]] Native (Expo)**。
 
-* **React Native (Expo)**：如果你会 [[React]]，你就会开发 App。Expo 现在的体验已经好得惊人，一键部署 iOS 和 Android。
-* **Flutter (Dart)**：Google 制造。它像游戏引擎一样自己渲染每一像素。性能好，一致性好。但你需要学一门新语言 (Dart)，且不仅是 React 生态。
+* **[[React]] Native (Expo)**：如果你会 [[React]]，你就会开发 App。Expo 现在的体验已经好得惊人，一键部署 iOS 和 Android。
+* **Flutter (Dart)**：Google 制造。它像游戏引擎一样自己渲染每一像素。性能好，一致性好。但你需要学一门新语言 (Dart)，且不仅是 [[React]] 生态。
 * **Electron**：开发桌面端 (VS Code 就是它写的)。简单，但吃内存。
 * **Tauri (Rust)**：Electron 的挑战者。后端用 Rust，前端用 Web。体积极小，性能极高。如果你懂 Rust，选它。
 

@@ -1,13 +1,13 @@
 ---
-title: "Tailwind CSS"
+title: "[[Tailwind CSS]]"
 phase: "wiki"
 ---
 
-# Tailwind CSS: Air and Water of Modern Web
+# [[Tailwind CSS]]: Air and Water of Modern Web
 
 > "If you are still writing class='wrapper' and then go to a CSS file to type .wrapper { display: flex }, you are stuck in 2015."
 
-**Tailwind CSS** is a "Utility-First" CSS framework. It doesn't give you pre-built components (like buttons or navbars); it gives you low-level building blocks (Utilities) to build exactly what you want, directly in your HTML.
+**[[Tailwind CSS]]** is a "Utility-First" CSS framework. It doesn't give you pre-built components (like buttons or navbars); it gives you low-level building blocks (Utilities) to build exactly what you want, directly in your HTML.
 
 ---
 
@@ -49,4 +49,4 @@ Beginners might think the HTML looks ugly (too many classes).
 **Endure it.**
 After a week, you will realize you can never go back to standard CSS. Your development speed will increase 10x.
 
-**VS Code Extension**: Must install `Tailwind CSS IntelliSense`. It helps you autocomplete all the classes.
+**VS Code Extension**: Must install `[[Tailwind CSS]] IntelliSense`. It helps you autocomplete all the classes.

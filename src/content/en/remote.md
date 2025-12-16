@@ -53,10 +53,10 @@ Disable `Password Authentication` immediately. Only allow Key-based login. This 
 
 ---
 
-## 5. 2025 Cloud Mode: GitHub Codespaces
+## 5. 2025 Cloud Mode: [[GitHub Codespaces]]
 
 Sometimes you don't even need your own server.
-**GitHub Codespaces** is a disposable cloud environment. Press `.` on any GitHub repo, and you get a fully configured VS Code in the browser.
+**[[GitHub Codespaces]]** is a disposable cloud environment. Press `.` on any GitHub repo, and you get a fully configured VS Code in the browser.
 Instead of spending hours setting up an environment, spend pennies renting a perfect one for an hour.
 
 ## Summary

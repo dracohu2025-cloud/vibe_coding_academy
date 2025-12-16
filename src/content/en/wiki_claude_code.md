@@ -1,13 +1,13 @@
 ---
-title: "Claude Code"
+title: "[[Claude Code]]"
 phase: "wiki"
 ---
 
-# Claude Code: The Terminal Ghost
+# [[Claude Code]]: The Terminal Ghost
 
 > "GUI is bloat. Real hackers use CLI."
 
-**Claude Code** is Anthropic's CLI tool. No fancy interface, it lives in your Terminal.
+**[[Claude Code]]** is Anthropic's CLI tool. No fancy interface, it lives in your Terminal.
 
 ## Core Gameplay
 

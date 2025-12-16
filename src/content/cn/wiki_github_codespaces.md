@@ -1,13 +1,13 @@
 ---
-title: "GitHub Codespaces"
+title: "[[GitHub Codespaces]]"
 phase: "wiki"
 ---
 
-# GitHub Codespaces: 云端基地
+# [[GitHub Codespaces]]: 云端基地
 
 > "给我一个浏览器，我就能撬动整个代码库。"
 
-**GitHub Codespaces** 是 GitHub 提供的即时云端开发环境。它本质上是一个运行在云端的 VS Code，加上了极其强大的计算能力。
+**[[GitHub Codespaces]]** 是 GitHub 提供的即时云端开发环境。它本质上是一个运行在云端的 VS Code，加上了极其强大的计算能力。
 
 ## 核心特性
 

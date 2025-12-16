@@ -22,8 +22,8 @@ Stop using just one AI. Treat them as **Employees** with distinct personalities:
   * *Role*: System design, complex debugging, refactoring strategies. Ask it "How" and "Why".
 * **GPT-5.2 (The Senior Engineer)**:
   * *Personality*:High execution speed, knows every framework.
-  * *Role*: Generating React components, writing SQL queries, date formatting. Ask it to "Do".
-* **Gemini 3.0 Pro (The Librarian)**:
+  * *Role*: Generating [[React]] components, writing SQL queries, date formatting. Ask it to "Do".
+* **[[Gemini 3.0]] Pro (The Librarian)**:
   * *Personality*: Infinite memory, devours documentation.
   * *Role*: Reading 100 pages of API docs, analyzing 10MB log files. Ask it to "Find".
 
@@ -43,7 +43,7 @@ In 2025, we have massive Context Windows (200K+ tokens).
 
 * **Don't save tokens**. Dump your `schema.prisma`, your `types.ts`, even your Product Requirement Doc (PRD) into the chat.
 * **The Golden Prompt**:
-    > "You are a Senior React Engineer. Based on the attached `<DesignSystem>` and `<DatabaseSchema>`, implement the User Profile page. Note: You MUST follow my ESLint rules (attached)."
+    > "You are a Senior [[React]] Engineer. Based on the attached `<DesignSystem>` and `<DatabaseSchema>`, implement the User Profile page. Note: You MUST follow my [[ESLint]] rules (attached)."
 
 ### Socratic Coding
 

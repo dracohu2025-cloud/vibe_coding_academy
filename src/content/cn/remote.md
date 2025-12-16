@@ -53,10 +53,10 @@ VS Code 会自动检测运行的端口，并将其**转发**到你本地的 `loc
 
 ---
 
-## 5. 2025 云端形态：GitHub Codespaces
+## 5. 2025 云端形态：[[GitHub Codespaces]]
 
 有时候你甚至不需要不需要自己的服务器。
-**GitHub Codespaces** 是云端的 "即抛型" 开发环境。点击 GitHub 仓库上的 "." 键，你就有了一个配置好的 VS Code 网页版。
+**[[GitHub Codespaces]]** 是云端的 "即抛型" 开发环境。点击 GitHub 仓库上的 "." 键，你就有了一个配置好的 VS Code 网页版。
 与其花几小时配置环境，不如花几美分租用一小时的完美环境。
 
 ## 总结

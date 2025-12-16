@@ -1,20 +1,20 @@
 ---
-title: "Roo Code"
+title: "[[Roo Code]]"
 phase: "wiki"
 ---
 
-# Roo Code: 开源游侠
+# [[Roo Code]]: 开源游侠
 
 > "我的 Key，我做主。"
 
-**Roo Code** (前身是 Roo / Root) 是一个开源的 VS Code 插件。在商业 AI 工具越来越封闭的今天，它是开源社区的希望之光。
+**[[Roo Code]]** (前身是 Roo / Root) 是一个开源的 VS Code 插件。在商业 AI 工具越来越封闭的今天，它是开源社区的希望之光。
 
 ## 核心特性
 
 ### 1. BYOK (Bring Your Own Key)
 
-Cursor 和 Trae 都是打包卖服务的。
-Roo Code 不卖服务。你自己去 OpenRouter 买 API Key（通常很便宜），然后填进去。
+[[Cursor]] 和 [[Trae]] 都是打包卖服务的。
+[[Roo Code]] 不卖服务。你自己去 OpenRouter 买 API Key（通常很便宜），然后填进去。
 这意味着你可以用最新的 **DeepSeek**，也可以用 **Claude**，甚至用你自己微调的模型。想切就切，没有中间商赚差价。
 
 ### 2. 角色模式 (Modes)
@@ -24,11 +24,11 @@ Roo Code 不卖服务。你自己去 OpenRouter 买 API Key（通常很便宜）
 * **Architect**: 只聊天，不写代码，帮你理清思路。
 * **Code**: 专注写代码。
 * **Ask**: 帮你读代码，解释代码。
-你也可以自定义角色，比如定义一个 "Vue 专家" 模式。
+你也可以自定义角色，比如定义一个 "[[Vue]] 专家" 模式。
 
 ### 3. 本地隐私优先
 
-它是开源的，你可以看到它每一行代码。如果你对隐私极度敏感，不能把代码发给云端 IDE，Roo Code 配合本地模型 (Ollama) 是唯一的选择。
+它是开源的，你可以看到它每一行代码。如果你对隐私极度敏感，不能把代码发给云端 IDE，[[Roo Code]] 配合本地模型 (Ollama) 是唯一的选择。
 
 ## 评价
 

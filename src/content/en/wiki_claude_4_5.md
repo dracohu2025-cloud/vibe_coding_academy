@@ -1,13 +1,13 @@
 ---
-title: "Claude 4.5"
+title: "[[Claude 4.5]]"
 phase: "wiki"
 ---
 
-# Claude 4.5 Sonnet: The Logic Monster
+# [[Claude 4.5]] Sonnet: The Logic Monster
 
-> "If Gemini is the Artist, Claude 4.5 is the Architect."
+> "If Gemini is the Artist, [[Claude 4.5]] is the Architect."
 
-Anthropic's **Claude 4.5 Sonnet** is currently the most logically powerful AI on Earth. For complex backend logic, algorithmic optimization, and system architecture, it is unrivaled.
+Anthropic's **[[Claude 4.5]] Sonnet** is currently the most logically powerful AI on Earth. For complex backend logic, algorithmic optimization, and system architecture, it is unrivaled.
 
 ## Core Features
 
@@ -29,7 +29,7 @@ It finds Race Conditions and Security Vulnerabilities that human reviewers often
 
 ### 3. Steerability
 
-It engages rules perfectly. If you define "Must use TypeScript strict mode" in `.cursorrules`, it will never give you an `any`.
+It engages rules perfectly. If you define "Must use [[TypeScript]] strict mode" in `.cursorrules`, it will never give you an `any`.
 
 ## Best Practices
 

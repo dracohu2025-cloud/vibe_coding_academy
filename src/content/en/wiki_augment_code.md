@@ -1,14 +1,14 @@
 ---
-title: "Augment Code"
+title: "[[Augment Code]]"
 phase: "wiki"
 ---
 
-# Augment Code: The Omniscient Memory
+# [[Augment Code]]: The Omniscient Memory
 
 > "It remembers everything."
 
 All AI has a weakness: **Context Window**. They forget.
-**Augment Code** was born to solve this.
+**[[Augment Code]]** was born to solve this.
 
 ## Core Features
 

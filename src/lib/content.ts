@@ -1,25 +1,27 @@
-import fs from 'fs';
-import path from 'path';
-import matter from 'gray-matter';
-
-const contentDirectory = path.join(process.cwd(), 'src/content');
+import { wikis } from '@/velite';
 
 export async function getTopicContent(language: 'en' | 'cn', topicId: string) {
-    const fullPath = path.join(contentDirectory, language, `${topicId}.md`);
+    // Find the wiki entry that matches the slug and language
+    // Velite has already parsed the content and frontmatter
+    const wiki = wikis.find(w => w.slug === topicId && w.lang === language);
 
-    try {
-        const fileContents = fs.readFileSync(fullPath, 'utf8');
-        const { data, content } = matter(fileContents);
+    if (wiki) {
         return {
-            metadata: data,
-            content
-        };
-    } catch (err) {
-        console.error(`Error reading markdown for ${language}/${topicId}:`, err);
-        // Fallback to English if CN is missing, or return error text
-        return {
-            metadata: { title: 'Not Found' },
-            content: '# Content Not Found\nSorry, this topic is not yet available in your language.'
+            metadata: {
+                title: wiki.title,
+                phase: wiki.phase,
+                ...wiki.metadata
+            },
+            content: wiki.content // In velite.config.ts, we mapped 'content' to 'raw' markdown
         };
     }
+
+    console.error(`Wiki not found for ${language}/${topicId}`);
+
+    // Fallback: Try to find English version if CN is missing? 
+    // For now, consistent behavior with previous version: return Not Found.
+    return {
+        metadata: { title: 'Not Found' },
+        content: '# Content Not Found\nSorry, this topic is not yet available in your language.'
+    };
 }

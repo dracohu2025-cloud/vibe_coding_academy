@@ -1,13 +1,13 @@
 ---
-title: "GitHub Codespaces"
+title: "[[GitHub Codespaces]]"
 phase: "wiki"
 ---
 
-# GitHub Codespaces: The Cloud Base
+# [[GitHub Codespaces]]: The Cloud Base
 
 > "Give me a browser, and I shall move the world."
 
-**GitHub Codespaces** is an instant cloud development environment provided by GitHub. It's essentially VS Code running in the cloud, backed by immense easy-to-access compute power.
+**[[GitHub Codespaces]]** is an instant cloud development environment provided by GitHub. It's essentially VS Code running in the cloud, backed by immense easy-to-access compute power.
 
 ## Core Features
 

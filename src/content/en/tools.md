@@ -24,7 +24,7 @@ Still the smoothest AI editor experience.
 A dark horse from ByteDance. Completely free and incredibly powerful.
 
 - **Solo Mode**: A "fully autonomous" mode. You give it a requirement, it acts as a Senior Engineer: planning, coding, testing, and running.
-- **Native Fluent**: Exceptional understanding of context, sometimes beating Cursor.
+- **Native Fluent**: Exceptional understanding of context, sometimes beating [[Cursor]].
 
 ### **[[GitHub Codespaces]]** (The Cloud Base)
 
@@ -89,7 +89,7 @@ Open Source hero in VS Code.
 
 ---
 
-## 4. Tactical Terminal: Warp
+## 4. Tactical Terminal: [[Warp]]
 
 Even with AI, you need a sidearm.
 **[[Warp]]** is the standard for the 21st Century. AI Command Search, Workflows, and Block Selection make the terminal human-friendly.
@@ -101,5 +101,5 @@ Even with AI, you need a sidearm.
 In 2024, we learned how to **write** code.
 In 2025, your job is to **command** these powerful AI partners.
 
-Left hand **Trae/Cursor**, right hand **Antigravity**, ammo loaded with **Gemini 3.0**.
+Left hand **[[Trae]]/Cursor**, right hand **[[Antigravity]]**, ammo loaded with **[[Gemini 3.0]]**.
 Go create.

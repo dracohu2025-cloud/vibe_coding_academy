@@ -1,21 +1,21 @@
 ---
-title: "Trae"
+title: "[[Trae]]"
 phase: "wiki"
 ---
 
-# Trae: The Dark Horse from ByteDance
+# [[Trae]]: The Dark Horse from ByteDance
 
 > "Free, and Powerful."
 
-**Trae** is an AI Native IDE from ByteDance. While Cursor dominates, Trae stormed in with extreme experience and a free tier.
+**[[Trae]]** is an AI Native IDE from ByteDance. While [[Cursor]] dominates, [[Trae]] stormed in with extreme experience and a free tier.
 
 ## Core Features
 
 ### 1. Solo Mode
 
-Trae's signature feature.
-While others are "Copilots", Trae offers "Solo".
-In this mode, AI takes over. You give a task "Add a login box here", and Trae plans files, writes code, runs tests, and fixes errors. You just watch.
+[[Trae]]'s signature feature.
+While others are "Copilots", [[Trae]] offers "Solo".
+In this mode, AI takes over. You give a task "Add a login box here", and [[Trae]] plans files, writes code, runs tests, and fixes errors. You just watch.
 
 ### 2. Native Chinese/English Fluency
 
