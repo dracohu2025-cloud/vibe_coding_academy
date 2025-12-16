@@ -2,7 +2,7 @@
 
 > "Code is the whisper of the soul, but hardware is the amplifier through which you roar to the world."
 
-In 2025, being a **Vibe Coder** means your hardware choice is no longer just about "specs". It's a war for **AI Compute**, **Sensory Experience**, and **Flow State Preservation**. Your gear must be powerful enough to run a 70B parameter Llama 4 locally, yet elegant enough to make writing [[React]] components feel like painting.
+In 2025, being a **Vibe Coder** means your hardware choice is no longer just about "specs". It's a war for **AI Compute**, **Sensory Experience**, and **Flow State Preservation**. Your gear must be powerful enough to run a 70B parameter Llama 4 locally, yet elegant enough to make writing [[[[React]]]] components feel like painting.
 
 This is not a shopping list. This is your **Weapon Forging Manual**.
 

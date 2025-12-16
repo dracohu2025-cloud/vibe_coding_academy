@@ -1,9 +1,9 @@
 ---
-title: "[[GitHub Codespaces]]"
+title: "GitHub Codespaces"
 phase: "wiki"
 ---
 
-# [[GitHub Codespaces]]: The Ultimate Nanny-Level Tutorial
+# GitHub Codespaces: The Ultimate Nanny-Level Tutorial
 
 > "Give me a browser, and I shall move the world."
 

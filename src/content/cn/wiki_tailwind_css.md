@@ -3,11 +3,11 @@ title: "[[Tailwind CSS]]"
 phase: "wiki"
 ---
 
-# [[Tailwind CSS]]: 现代 Web 的空气和水
+# Tailwind CSS: 现代 Web 的空气和水
 
 > "如果你还在写 class='wrapper' 然后去 css 文件里写 .wrapper { display: flex }，那你还活在 2015 年。"
 
-**[[Tailwind CSS]]** 是一个 "Utility-First"（原子化优先）的 CSS 框架。它不提供现成的组件（比如按钮、导航栏），而是提供了一堆小积木（Utilities），让你直接在 HTML 里拼出任何你想要的样子。
+**[[[[Tailwind CSS]]]]** 是一个 "Utility-First"（原子化优先）的 CSS 框架。它不提供现成的组件（比如按钮、导航栏），而是提供了一堆小积木（Utilities），让你直接在 HTML 里拼出任何你想要的样子。
 
 ---
 
@@ -49,4 +49,4 @@ Tailwind 帮你定义好了什么是 "红"（red-500），什么是 "大"（text
 **忍受它。**
 当你写了一个星期后，你会发现你再也回不去写普通 CSS 的日子了。你的开发速度会提升 10 倍。
 
-**配合 VS Code 插件**：一定要安装 `[[Tailwind CSS]] IntelliSense`，它会智能提示所有的 class。
+**配合 VS Code 插件**：一定要安装 `[[[[Tailwind CSS]]]] IntelliSense`，它会智能提示所有的 class。

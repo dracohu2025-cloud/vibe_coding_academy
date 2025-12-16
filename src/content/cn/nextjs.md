@@ -1,9 +1,9 @@
-# 核心引擎：[[Next.js]] (App Router)
+# 核心引擎：Next.js (App Router)
 
 > "2025 年，我们不再手写 `div`。我们编排组件。"
 
-[[React]] 是库，而 [[Next.js]] 是**框架**。在 Vibe Coding 的哲学中，我们从不从零开始造轮子。我们站在巨人的肩膀上，用最少的代码实现最酷的效果。
-[[Next.js]] 15+ (App Router) 是目前星球上构建 Web 应用的**唯一标准答案**。
+[[[[React]]]] 是库，而 [[[[Next.js]]]] 是**框架**。在 Vibe Coding 的哲学中，我们从不从零开始造轮子。我们站在巨人的肩膀上，用最少的代码实现最酷的效果。
+[[[[Next.js]]]] 15+ (App Router) 是目前星球上构建 Web 应用的**唯一标准答案**。
 
 ---
 
@@ -63,7 +63,7 @@ export default async function ProfilePage() {
 
 **Vibe 提示**：
 
-* 这就是为什么我们说 AI Code Gen 在 App Router 时代更强大。因为它逻辑简单，Claude Opus 不需要处理复杂的 [[React]] 生命周期，它只需要写一个 async 函数。
+* 这就是为什么我们说 AI Code Gen 在 App Router 时代更强大。因为它逻辑简单，Claude Opus 不需要处理复杂的 [[[[React]]]] 生命周期，它只需要写一个 async 函数。
 
 ---
 
@@ -82,20 +82,20 @@ export async function updateName(formData: FormData) {
 }
 ```
 
-然后在你的组件里直接调用它。就像调用一个本地函数一样。[[Next.js]] 处理了背后所有的网络请求和序列化。
+然后在你的组件里直接调用它。就像调用一个本地函数一样。[[[[Next.js]]]] 处理了背后所有的网络请求和序列化。
 
 ---
 
-## 4. UI 的终局：[[Shadcn/UI]] & v0
+## 4. UI 的终局：[[[[Shadcn/UI]]]] & v0
 
 你不是 UI 设计师，你也不需要是。
 
-* **[[Tailwind CSS]]**：这是原语。不要写 `.css` 文件。直接写 `class="flex justify-center"`。这是肌肉记忆。
+* **[[[[Tailwind CSS]]]]**：这是原语。不要写 `.css` 文件。直接写 `class="flex justify-center"`。这是肌肉记忆。
 * **shadcn/ui**：它不是组件库，它是**代码片段**。当你安装一个组件，它直接把代码复制到你的 `src/components/ui` 文件夹。你拥有它，你可以修改它。
 * **v0.dev (AI UI)**：这是你的绝杀技。
     1. 打开 v0.dev。
     2. 输入："设计一个赛博朋克风格的登录表单，带有玻璃拟态背景。"
-    3. 复制生成的 [[React]] 代码。
+    3. 复制生成的 [[[[React]]]] 代码。
     4. 粘贴到你的项目。
     5. 下班。
 
@@ -103,5 +103,5 @@ export async function updateName(formData: FormData) {
 
 ## 总结
 
-[[Next.js]] (App Router) 加上 [[Shadcn/UI]]，让你一个人就能并在 2 天内完成以前一个前端团队 2 周的工作量。
+[[[[Next.js]]]] (App Router) 加上 [[[[Shadcn/UI]]]]，让你一个人就能并在 2 天内完成以前一个前端团队 2 周的工作量。
 这就是 **Vibe Coding** 的核心：**极速构建，极致优雅**。

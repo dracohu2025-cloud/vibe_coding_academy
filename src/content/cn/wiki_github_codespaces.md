@@ -1,9 +1,9 @@
 ---
-title: "[[GitHub Codespaces]]"
+title: "GitHub Codespaces"
 phase: "wiki"
 ---
 
-# [[GitHub Codespaces]]：云端基地保姆级教程
+# GitHub Codespaces：云端基地保姆级教程
 
 > "给我一个浏览器，我就能撬动整个代码库。"
 

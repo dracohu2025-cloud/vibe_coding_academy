@@ -3,18 +3,18 @@ title: "[[Gemini 3.0]]"
 phase: "wiki"
 ---
 
-# [[Gemini 3.0]] Pro: The God of Vibe Coding
+# Gemini 3.0 Pro: The God of Vibe Coding
 
 > "It doesn't just understand code; it understands your intent."
 
-**[[Gemini 3.0]] Pro** is Google DeepMind's flagship model for 2025, fundamentally changing how we code and defining the concept of **"Vibe Coding"**.
+**[[[[Gemini 3.0]]]] Pro** is Google DeepMind's flagship model for 2025, fundamentally changing how we code and defining the concept of **"Vibe Coding"**.
 
 ## Core Features
 
 ### 1. Definitive Vibe Coding
 
 Older models needed detailed Specs.
-[[Gemini 3.0]] does not. You just say: "Give me a player like Spotify, but make it Cyberpunk style."
+[[[[Gemini 3.0]]]] does not. You just say: "Give me a player like Spotify, but make it Cyberpunk style."
 It instantly grasps your "Assert" (aesthetics) and "Vibe", generating a complete app with perfect CSS animations.
 
 ### 2. Native Multimodal
@@ -26,11 +26,11 @@ It reads pixels, not just text.
 
 ### 3. Infinite Context
 
-Its context window is massive. You can throw the entire [[React]] source code at it and ask how a low-level Hook is implemented. It won't hallucinate; it explains like a senior engineer with 10 years of experience.
+Its context window is massive. You can throw the entire [[[[React]]]] source code at it and ask how a low-level Hook is implemented. It won't hallucinate; it explains like a senior engineer with 10 years of experience.
 
 ## Best Practices
 
-* **IDE**: Use with **Google [[Antigravity]]** or **[[Cursor]]**.
+* **IDE**: Use with **Google [[[[Antigravity]]]]** or **[[[[Cursor]]]]**.
 * **Prompting**: It is "Intuitive". Don't be too rigid; use adjectives to describe the *feeling* you want.
 
 ## Verdict

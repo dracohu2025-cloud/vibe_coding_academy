@@ -3,11 +3,11 @@ title: "[[TypeScript]]"
 phase: "wiki"
 ---
 
-# [[TypeScript]]: JavaScript with Safety Belts
+# TypeScript: JavaScript with Safety Belts
 
 > "Once you get used to IntelliSense, writing raw JS feels like running naked."
 
-**[[TypeScript]] (TS)** is a superset of JavaScript developed by Microsoft. Simply put, it adds **Types** to JS.
+**[[[[TypeScript]]]] (TS)** is a superset of JavaScript developed by Microsoft. Simply put, it adds **Types** to JS.
 
 ---
 

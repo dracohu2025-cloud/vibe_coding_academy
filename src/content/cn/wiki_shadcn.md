@@ -3,11 +3,11 @@ title: "[[Shadcn/UI]]"
 phase: "wiki"
 ---
 
-# [[Shadcn/UI]]: 不是组件库，是秘密武器
+# Shadcn/UI: 不是组件库，是秘密武器
 
 > "给拥有者以控制权。"
 
-**[[Shadcn/UI]]** (发音类似 "Shad-cn") 是 2024-2025 年最火的前端现象。但它**不是**一个像 Ant Design 或 Material UI 那样的 npm 包。
+**[[[[Shadcn/UI]]]]** (发音类似 "Shad-cn") 是 2024-2025 年最火的前端现象。但它**不是**一个像 Ant Design 或 Material UI 那样的 npm 包。
 
 ---
 

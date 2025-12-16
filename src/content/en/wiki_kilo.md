@@ -3,11 +3,11 @@ title: "[[Kilo]]"
 phase: "wiki"
 ---
 
-# [[Kilo]] Code: The Visual Builder
+# Kilo Code: The Visual Builder
 
 > "What You See Is What You Get."
 
-**[[Kilo]] Code** attempts to bridge "Code" and "Vision".
+**[[[[Kilo]]]] Code** attempts to bridge "Code" and "Vision".
 
 ## Core Features
 
@@ -22,4 +22,4 @@ It runs in cloud containers. Environment (Node.js, Python, Docker) is pre-config
 
 ## Verdict
 
-**"For indie hackers wanting quick prototypes, [[Kilo]] is the fastest starting line."**
+**"For indie hackers wanting quick prototypes, [[[[Kilo]]]] is the fastest starting line."**

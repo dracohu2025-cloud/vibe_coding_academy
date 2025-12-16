@@ -55,8 +55,8 @@ If you want to experience extreme flow, use **DevContainers** in VS Code (or Cur
 
 ## 4. 2025 AI Strategy
 
-When writing a `Dockerfile`, just ask [[Antigravity]] or Claude:
-> "Write a production-grade multi-stage Dockerfile for my [[Next.js]] 15 app, using Alpine base to minimize size."
+When writing a `Dockerfile`, just ask [[[[Antigravity]]]] or Claude:
+> "Write a production-grade multi-stage Dockerfile for my [[[[Next.js]]]] 15 app, using Alpine base to minimize size."
 
 AI handles the complex Multi-stage builds, shrinking your image from 1GB to 80MB. This is extreme efficiency.
 

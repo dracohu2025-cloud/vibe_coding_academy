@@ -10,7 +10,7 @@
 
 ## 1. 托管平台：Vercel
 
-Vercel 不仅仅是 [[Next.js]] 的创造者，它是**前端的 AWS**。
+Vercel 不仅仅是 [[[[Next.js]]]] 的创造者，它是**前端的 AWS**。
 
 * **GitOps**: 你只需要把代码推送到 GitHub。Vercel 会自动检测提交，自动构建，自动部署，自动生成预览链接。
 * **全球 CDN**: 你的网站不是住在一台服务器上，而是住在全球 100+ 个边缘节点上。无论用户在伦敦还是东京，访问速度都一样快。
@@ -18,10 +18,10 @@ Vercel 不仅仅是 [[Next.js]] 的创造者，它是**前端的 AWS**。
 
 ---
 
-## 2. 数据库：[[Supabase]] (The Postgres)
+## 2. 数据库：[[[[Supabase]]]] (The Postgres)
 
 你是前端开发者，你需要数据库，但你不想学 SQL 配置。
-**[[Supabase]]** 是 "Firebase 的开源替代品"，基于强大的 PostgreSQL。
+**[[[[Supabase]]]]** 是 "Firebase 的开源替代品"，基于强大的 PostgreSQL。
 
 * **Table Editor**: 像 Excel 一样在网页上管理你的数据。
 * **Auth**: 自带用户注册、登录（Google, GitHub 登录），一行代码集成。
@@ -29,7 +29,7 @@ Vercel 不仅仅是 [[Next.js]] 的创造者，它是**前端的 AWS**。
 * **Edge Functions**: 可以在全球边缘运行的后端代码。
 
 **Vibe 组合**：
-[[Next.js]] (前端) + [[Supabase]] (数据库 & 认证)。这是 2025 年独立开发者的标准技术栈。
+[[[[Next.js]]]] (前端) + [[[[Supabase]]]] (数据库 & 认证)。这是 2025 年独立开发者的标准技术栈。
 
 ---
 
@@ -50,17 +50,17 @@ Vercel 不仅仅是 [[Next.js]] 的创造者，它是**前端的 AWS**。
 `Client -> API Server (Python/Java) -> Database`
 
 Vibe Coding 后端：
-`Client -> [[Next.js]] Server Actions -> [[Supabase]] / Upstash`
+`Client -> [[[[Next.js]]]] Server Actions -> [[[[Supabase]]]] / Upstash`
 
 或者更激进：
-`Client -> [[Supabase]] (通过 RLS 安全策略直接读写)`
+`Client -> [[[[Supabase]]]] (通过 RLS 安全策略直接读写)`
 
-AI (Claude/GPT) 极其擅长编写 **[[Supabase]] RLS (Row Level Security)** 策略。你只需要告诉它：“只允许用户读取自己的个人资料”，它就会写出完美的 SQL 策略。这让你甚至不需要写后端 API 就能构建安全的程序。
+AI (Claude/GPT) 极其擅长编写 **[[[[Supabase]]]] RLS (Row Level Security)** 策略。你只需要告诉它：“只允许用户读取自己的个人资料”，它就会写出完美的 SQL 策略。这让你甚至不需要写后端 API 就能构建安全的程序。
 
 ---
 
 ## 总结
 
-拥有 Vercel + [[Supabase]] + Upstash，你就拥有了一个**不需要运维团队的 Google Cloud**。
+拥有 Vercel + [[[[Supabase]]]] + Upstash，你就拥有了一个**不需要运维团队的 Google Cloud**。
 它们都有慷慨的免费层 (Free Tier)，足够你运营一个拥有 10,000 日活用户的应用。
 这就是**无形后端**的力量。你只关注业务逻辑，让云来处理其余的一切。
