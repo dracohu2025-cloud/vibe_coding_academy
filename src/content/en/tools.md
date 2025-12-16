@@ -86,7 +86,7 @@ Open Source hero in VS Code.
 ## 4. Tactical Terminal: Warp
 
 Even with AI, you need a sidearm.
-**Warp** is the standard for the 21st Century. AI Command Search, Workflows, and Block Selection make the terminal human-friendly.
+**[[Warp]]** is the standard for the 21st Century. AI Command Search, Workflows, and Block Selection make the terminal human-friendly.
 
 ---
 
