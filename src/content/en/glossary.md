@@ -67,6 +67,7 @@ Deep dives into all core concepts, tools, and tech stacks are indexed here.
 
 * **[[Velite]]**: The type-safe content layer, best successor to Contentlayer.
 * **[[Supabase]]**: The open-source Firebase alternative (PostgreSQL).
+* **[[Stripe]]**: The financial infrastructure for the internet.
 
 ### Quality Assurance
 

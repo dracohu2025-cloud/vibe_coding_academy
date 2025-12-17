@@ -114,6 +114,18 @@ Even with AI, you need a sidearm.
 
 ---
 
+## 6. Money Flow: Stripe
+
+If code is blood, money is oxygen.
+
+### **Stripe** (Global Cashier)
+
+- **Status**: The guardian of internet GDP.
+- **Power**: If you can code, you can do global business. It handles tax, compliance, billing, and all the messy stuff.
+- **Vibe**: Its API and documentation are the aesthetic benchmark for all developers.
+
+---
+
 ## Summary
 
 In 2024, we learned how to **write** code.
