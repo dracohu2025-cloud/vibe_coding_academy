@@ -21,7 +21,7 @@ VS Code 依然是地基，但我们需要在上面盖摩天大楼。
 
 ### **Velite** (内容管家)
 
-Vibe Coding Academy 的幕后英雄。
+Vibe Coding Academy 的幕后英雄 [[Velite]]。
 
 - **定位**: 类型安全的内容层 (Content Layer)。
 - **作用**: 把你的 Markdown 变成 [[TypeScript]] 数据。

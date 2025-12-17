@@ -21,7 +21,7 @@ Still the smoothest AI editor experience.
 
 ### **Velite** (The Content Butler)
 
-The unsung hero of Vibe Coding Academy.
+The unsung hero of Vibe Coding Academy: [[Velite]].
 
 - **Role**: Type-safe Content Layer.
 - **Function**: Turns your Markdown into [[TypeScript]] data.
