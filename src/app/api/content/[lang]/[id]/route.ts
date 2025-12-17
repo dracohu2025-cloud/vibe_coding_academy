@@ -6,7 +6,7 @@ export async function GET(request: Request, { params }: { params: Promise<{ lang
 
     // Velite generates a flat array of all wikis
     // We match by the computed 'lang' and 'slug' fields
-    const wiki = wikis.find(w => w.lang === lang && w.slug === id);
+    const wiki = wikis.find(w => w.lang === lang && w.slug.toLowerCase() === id.toLowerCase());
 
     if (!wiki) {
         return NextResponse.json(
