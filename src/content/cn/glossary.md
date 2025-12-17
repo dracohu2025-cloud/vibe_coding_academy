@@ -65,6 +65,7 @@ phase: "wiki"
 
 ### 后端与数据 (Backend)
 
+* **[[Velite]]**：类型安全的内容层，Contentlayer 的最佳接班人。
 * **[[Supabase]]**：开源的 Firebase 替代品，PostgreSQL 的最佳拍档。
 
 ### 质量保证 (Quality)
