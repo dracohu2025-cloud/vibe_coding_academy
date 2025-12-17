@@ -24,7 +24,7 @@ Still the smoothest AI editor experience.
 The unsung hero of Vibe Coding Academy.
 
 - **Role**: Type-safe Content Layer.
-- **Function**: Turns your Markdown into TypeScript data.
+- **Function**: Turns your Markdown into [[TypeScript]] data.
 - **Status**: The best successor to Contentlayer.
 
 ### **Trae** (The Challenger)
