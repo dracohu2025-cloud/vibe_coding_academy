@@ -62,4 +62,4 @@ AI handles the complex Multi-stage builds, shrinking your image from 1GB to 80MB
 
 ## Summary
 
-Docker lets you package your app into a **Time Capsule**. Whether you throw it onto Vercel, AWS, or a new laptop 5 years from now, it unzips and runs exactly the same way. This is Engineering Determinism.
+Docker lets you package your app into a **Time Capsule**. Whether you throw it onto [[Vercel]], AWS, or a new laptop 5 years from now, it unzips and runs exactly the same way. This is Engineering Determinism.

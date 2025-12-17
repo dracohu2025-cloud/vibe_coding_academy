@@ -10,11 +10,11 @@ Welcome to **Serverless Architecture**. It’s not just free (to start); it scal
 
 ## 1. The Host: Vercel
 
-Vercel is not just the creator of [[Next.js]]; it is the **AWS for Frontend**.
+[[Vercel]] is not just the creator of [[Next.js]]; it is the **AWS for Frontend**.
 
-* **GitOps**: You just push code to GitHub. Vercel automatically detects the commit, builds it, deploys it, and generates a preview link.
+* **GitOps**: You just push code to GitHub. [[Vercel]] automatically detects the commit, builds it, deploys it, and generates a preview link.
 * **Global CDN**: Your website doesn't live on one server; it lives on 100+ edge nodes worldwide. Fast access for users in London or Tokyo.
-* **Zero Maintenance**: No SSH, no `apt-get update`. If the site goes down, it's Vercel's problem, not yours (and Vercel rarely goes down).
+* **Zero Maintenance**: No SSH, no `apt-get update`. If the site goes down, it's [[Vercel]]'s problem, not yours (and [[Vercel]] rarely goes down).
 
 ---
 
@@ -61,6 +61,6 @@ AI (Claude/GPT) is incredibly good at writing **[[Supabase]] RLS (Row Level Secu
 
 ## Summary
 
-With Vercel + [[Supabase]] + Upstash, you possess a **Google Cloud without the DevOps team**.
+With [[Vercel]] + [[Supabase]] + Upstash, you possess a **Google Cloud without the DevOps team**.
 They all have generous Free Tiers, enough to support an app with 10,000 DAU.
 This is the power of the **Invisible Backend**. You focus on the idea; the Cloud handles the rest.

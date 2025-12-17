@@ -45,7 +45,7 @@ phase: "wiki"
 ## 既然这么好，为什么不是首选？
 
 1. **[[TypeScript]] 支持**：虽然 [[Vue]] 3 改观了很多，但 [[React]] 的 TS 支持是原生的、完美的。[[Vue]] 需要一些"体操"。
-2. **生态系统**：[[React]] Native, [[Next.js]], Vercel... 整个世界都在围绕 [[React]] 旋转。
+2. **生态系统**：[[React]] Native, [[Next.js]], [[Vercel]]... 整个世界都在围绕 [[React]] 旋转。
 3. **AI 代码生成**：目前的 AI (如 v0.dev) 对 [[React]]/Shadcn 的生成质量远高于 [[Vue]]。
 
 ## Vibe 建议

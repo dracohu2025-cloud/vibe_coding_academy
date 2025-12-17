@@ -45,7 +45,7 @@ This structure is incredibly clean and organized.
 ## If it's so good, why not #1?
 
 1. **[[TypeScript]] Support**: [[Vue]] 3 is vastly improved, but [[React]]'s TS support is native and perfect. [[Vue]] requires some "gymnastics".
-2. **Ecosystem**: [[React]] Native, [[Next.js]], Vercel... the world revolves around [[React]].
+2. **Ecosystem**: [[React]] Native, [[Next.js]], [[Vercel]]... the world revolves around [[React]].
 3. **AI Generation**: Current AI tools (like v0.dev) generate much better [[React]]/Shadcn code than [[Vue]] code.
 
 ## Vibe Advice

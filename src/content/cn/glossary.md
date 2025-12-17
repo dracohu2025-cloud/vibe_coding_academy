@@ -80,4 +80,5 @@ phase: "wiki"
 
 ### 基础设施 (Infra)
 
+* **[[Vercel]]**：[[Next.js]] 的创造者，现代前端云平台 (Frontend Cloud)。
 * **[[Domain & DNS]]**：你的数字地契（域名）与互联网电话本（DNS）。

@@ -17,7 +17,7 @@ It lives right inside your repo (`.github/workflows/`).
 Create `.github/workflows/deploy.yml`:
 
 ```yaml
-name: Deploy to Vercel
+name: Deploy to [[Vercel]]
 on:
   push:
     branches: [main]
@@ -64,7 +64,7 @@ Integrate **AI Reviewers** (like CodiumAI, CodeRabbit):
 
 ## 4. Preview Deployments
 
-The greatest innovation from Vercel/Netlify.
+The greatest innovation from [[Vercel]]/Netlify.
 Every Pull Request generates a **Unique URL** built from that specific branch.
 Send it to your designer. Send it to your PM. Once verified, merge to main.
 

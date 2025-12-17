@@ -47,8 +47,8 @@ Pure [[React]] is just a UI library. When you use only [[React]], you have to de
 
 ## Vercel
 
-[[Next.js]] is developed by **Vercel**.
-Vercel is the best frontend deployment platform. Push your [[Next.js]] code to GitHub, and Vercel automatically deploys it with a global CDN.
+[[Next.js]] is developed by **[[Vercel]]**.
+[[Vercel]] is the best frontend deployment platform. Push your [[Next.js]] code to GitHub, and [[Vercel]] automatically deploys it with a global CDN.
 
 ## Vibe Advice
 

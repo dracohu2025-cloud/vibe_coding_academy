@@ -114,6 +114,18 @@ VS Code 里的开源英雄。
 
 ---
 
+## 7. 部署与即刻上线：Vercel
+
+写代码是为了被世界看到的。
+
+### **Vercel** (Frontend Cloud)
+
+- **地位**: [[Next.js]] 的亲爹。
+- **能力**: Push to Git = Deploy. 没有比这更爽的体验了。
+- **Vibe**: 自动预览链接 (Preview Deployment) 是团队协作的神器。
+
+---
+
 ## 6. 资金流转：Stripe
 
 如果代码是血液，钱就是氧气。

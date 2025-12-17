@@ -17,7 +17,7 @@ CI/CD (持续集成/持续部署) 听起来很企业级，但它的本质很简�
 创建一个 `.github/workflows/deploy.yml`:
 
 ```yaml
-name: Deploy to Vercel
+name: Deploy to [[Vercel]]
 on:
   push:
     branches: [main]
@@ -64,11 +64,11 @@ CI 系统是你的**冷面考官**。它不会因为你累了就放过一个 Bug
 
 ## 4. 预览部署 (Preview Deployments)
 
-Vercel 和 Netlify 带来的最大革新。
+[[Vercel]] 和 Netlify 带来的最大革新。
 每一个 Pull Request 都会生成一个**通过这一分支构建的独立网址**。
 发给设计师看，发给产品经理看。确认无误后，再合并到主分支。
 
 ## 总结
 
 CI/CD 让你拥有了**发布代码的信心**。
-你知道，只要 GitHub Actions 的那个小圆点变成了绿色，并在 Vercel 上显示 "Ready"，你的用户就能看到完美的更新。睡个好觉，不用担心半夜服务器挂了。
+你知道，只要 GitHub Actions 的那个小圆点变成了绿色，并在 [[Vercel]] 上显示 "Ready"，你的用户就能看到完美的更新。睡个好觉，不用担心半夜服务器挂了。

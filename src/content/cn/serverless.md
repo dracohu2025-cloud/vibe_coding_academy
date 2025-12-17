@@ -10,11 +10,11 @@
 
 ## 1. 托管平台：Vercel
 
-Vercel 不仅仅是 [[Next.js]] 的创造者，它是**前端的 AWS**。
+[[Vercel]] 不仅仅是 [[Next.js]] 的创造者，它是**前端的 AWS**。
 
-* **GitOps**: 你只需要把代码推送到 GitHub。Vercel 会自动检测提交，自动构建，自动部署，自动生成预览链接。
+* **GitOps**: 你只需要把代码推送到 GitHub。[[Vercel]] 会自动检测提交，自动构建，自动部署，自动生成预览链接。
 * **全球 CDN**: 你的网站不是住在一台服务器上，而是住在全球 100+ 个边缘节点上。无论用户在伦敦还是东京，访问速度都一样快。
-* **零服务器维护**: 没有 SSH，没有 `apt-get update`。如果网站挂了，那是 Vercel 的问题，不是你的问题（而 Vercel 几乎从不挂）。
+* **零服务器维护**: 没有 SSH，没有 `apt-get update`。如果网站挂了，那是 [[Vercel]] 的问题，不是你的问题（而 [[Vercel]] 几乎从不挂）。
 
 ---
 
@@ -61,6 +61,6 @@ AI (Claude/GPT) 极其擅长编写 **[[Supabase]] RLS (Row Level Security)** 策
 
 ## 总结
 
-拥有 Vercel + [[Supabase]] + Upstash，你就拥有了一个**不需要运维团队的 Google Cloud**。
+拥有 [[Vercel]] + [[Supabase]] + Upstash，你就拥有了一个**不需要运维团队的 Google Cloud**。
 它们都有慷慨的免费层 (Free Tier)，足够你运营一个拥有 10,000 日活用户的应用。
 这就是**无形后端**的力量。你只关注业务逻辑，让云来处理其余的一切。

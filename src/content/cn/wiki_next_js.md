@@ -47,8 +47,8 @@ phase: "wiki"
 
 ## Vercel
 
-[[Next.js]] 是由 **Vercel** 公司开发的。
-Vercel 是目前最好的前端部署平台。把你的 [[Next.js]] 代码推送到 GitHub，Vercel 就会自动部署，并分配一个全球 CDN 加速的网址。
+[[Next.js]] 是由 **[[Vercel]]** 公司开发的。
+[[Vercel]] 是目前最好的前端部署平台。把你的 [[Next.js]] 代码推送到 GitHub，[[Vercel]] 就会自动部署，并分配一个全球 CDN 加速的网址。
 
 ## Vibe 建议
 

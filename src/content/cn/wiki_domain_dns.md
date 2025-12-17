@@ -86,7 +86,7 @@ DNS 的工作就是把 **域名** 翻译成 **IP 地址**。
 
 **用途**：将域名指向**另一个域名** (别名)。
 
-* **场景**：你用 [[Vercel]] 托管前端。Vercel 会给你一个 `cname.vercel-dns.com`。
+* **场景**：你用 [[Vercel]] 托管前端。[[Vercel]] 会给你一个 `cname.vercel-dns.com`。
 * **配置**：
   * Type: `CNAME`
   * Name: `www` (代表 `www.abc.com`)

@@ -80,4 +80,5 @@ Deep dives into all core concepts, tools, and tech stacks are indexed here.
 
 ### Infrastructure
 
+* **[[Vercel]]**: The creator of [[Next.js]] and the Frontend Cloud.
 * **[[Domain & DNS]]**: Your digital title deed (Domain) and the internet phonebook (DNS).

@@ -114,6 +114,18 @@ Even with AI, you need a sidearm.
 
 ---
 
+## 7. Deploy & Ship: Vercel
+
+Code is meant to be seen.
+
+### **Vercel** (Frontend Cloud)
+
+- **Status**: The creator of [[Next.js]].
+- **Power**: Push to Git = Deploy. Nothing beats this experience.
+- **Vibe**: Preview Deployments are a game-changer for collaboration.
+
+---
+
 ## 6. Money Flow: Stripe
 
 If code is blood, money is oxygen.
